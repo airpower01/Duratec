@@ -84,7 +84,7 @@
   }
   
   .wrapper {
-    width: 100%;
+    width: 98.7%;
     position: absolute;
     height: 100%;
     background-color: #fff;
@@ -141,4 +141,4 @@
   export default {
       name: 'Navbar'
   }   
-  </script> -->
+  </script> --> 
