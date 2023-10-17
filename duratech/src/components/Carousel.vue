@@ -1,7 +1,7 @@
 <template>
     <div class="container-lg">
 	<div class="row">
-		<div class="col-md-2">
+		<div class="col-md-12">
 			<div id="myCarousel" class="carousel slide" data-ride="carousel">
 		
 				<ol class="carousel-indicators">
@@ -12,13 +12,13 @@
 	
 				<div class="carousel-inner">
 					<div class="carousel-item active">
-						<img src="https://tse4.mm.bing.net/th?id=OIP.XPaOvSa-FzVuuecMseCVwgHaE8&pid=Api&P=0&h=180" class="img-fluid" alt="Notebook">
+						<img src="https://tse3.mm.bing.net/th?id=OIP.WIYo1B0cqxSyTehbqkCElQHaLH&pid=Api&P=0&h=180" class="img-fluid" alt="Notebook">
 						<div class="carousel-caption">
 	
 						</div>
 					</div>	
 					<div class="carousel-item">
-						<img src="https://tse1.mm.bing.net/th?id=OIP.A5kBJDTsza3C3UwpNc8GdgHaDd&pid=Api&P=0&h=180" class="img-fluid" alt="Tablet">
+						<img src="https://tse3.mm.bing.net/th?id=OIP.WIYo1B0cqxSyTehbqkCElQHaLH&pid=Api&P=0&h=180" class="img-fluid" alt="Tablet">
 						<div class="carousel-caption">
 							<h3>Amazing Digital Experience</h3>							
 							<p>Nullam hendrerit justo non leo aliquet imperdiet. Etiam sagittis lectus condime dapibus.</p>
@@ -29,7 +29,7 @@
 						</div>
 					</div>
 					<div class="carousel-item">
-						<img src="https://www.cultivart.com.au/wp-content/uploads/2017/05/BANNERS-1-6.jpg" class="img-fluid" alt="Workstation">
+						<img src="https://tse3.mm.bing.net/th?id=OIP.WIYo1B0cqxSyTehbqkCElQHaLH&pid=Api&P=0&h=180" class="img-fluid" alt="Workstation">
 						<div class="carousel-caption">
 
 						</div>
@@ -50,16 +50,14 @@ export default {
 
 <style>
 .carousel {
-    width: 100%;
     background: #ccc;
   	position: relative;
-    box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+	width: 100%;
 }
 .carousel:after {
 	content: "";
     position: absolute;
     z-index: -1;
-    box-shadow: 0 0 20px rgba(0,0,0,0.8);
     height: 60px;
     bottom: 0px;
     left: 10px;
@@ -73,11 +71,11 @@ export default {
 }
 .carousel .item img {
 	max-width: 100%;
-    /* margin: 0 auto; Align slide image horizontally center in Bootstrap v3 */
+    margin: 0 auto; /* Align slide image horizontally center in Bootstrap v3 */
 }
 .carousel .carousel-control {
 	width: 50px;
-    height: 100px;
+    height: 50px;
     background: #000;
     margin: auto 0;
 	opacity: 0.8;
@@ -91,7 +89,6 @@ export default {
 .carousel-caption h3, .carousel-caption p {
 	color: #fff;
 	display: inline-block;
-	font-family: 'Oswald', sans-serif;
 	text-shadow: none;
 	margin-bottom: 20px;
 }
