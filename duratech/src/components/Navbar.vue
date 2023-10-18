@@ -39,8 +39,8 @@
             <a class="nav-link" href="#">Contact</a>
           </li>
         </ul>
-        <div class="d-flex flex-column sim">
-          <small class="text-dark fw-bolder mr-5">DONATE NOW!</small>
+        <div class="d-flex flex-column">
+          <small class="text-dark fw-bolder mr-5" style="letter-spacing: 2px; font-weight: bold;"> <iconify-icon icon="solar:hand-heart-linear" style="color: #7bd22b; margin-right: 2px;" width="17"></iconify-icon> DONATE NOW!</small>
         </div>
       </div>
     </div>
@@ -74,8 +74,7 @@ body {
   padding: 0.2rem 0.5rem;
   font-size: 1.25rem;
   line-height: 1;
-  background-color: transparent;
-  border: 1px solid transparent;
+  background-color: white;
   color: white;
 }
 
