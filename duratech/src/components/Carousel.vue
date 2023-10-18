@@ -20,12 +20,6 @@
 					<div class="carousel-item">
 						<img src="https://tse3.mm.bing.net/th?id=OIP.WIYo1B0cqxSyTehbqkCElQHaLH&pid=Api&P=0&h=180" class="img-fluid" alt="Tablet">
 						<div class="carousel-caption">
-							<h3>Amazing Digital Experience</h3>							
-							<p>Nullam hendrerit justo non leo aliquet imperdiet. Etiam sagittis lectus condime dapibus.</p>
-							<div class="carousel-action">
-								<a href="#" class="btn btn-primary">Learn More</a>
-								<a href="#" class="btn btn-success">Try Now</a>
-							</div>
 						</div>
 					</div>
 					<div class="carousel-item">
@@ -138,7 +132,7 @@ export default {
 	margin: 1px 6px;
 }
 .carousel-indicators li {
-	background: transparent;
+	background-color: white;
 	border: 1px solid #fff;
 }
 .carousel-indicators li.active {
