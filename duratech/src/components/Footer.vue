@@ -16,7 +16,6 @@ export default {
 <style>
 .footer-2 {
   background-color: #262a25;
-  background-size: cover;
   color: #fff;
   padding: 50px;    
   text-align: center;
