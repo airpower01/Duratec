@@ -6,6 +6,10 @@
   <Carousel></Carousel>
 
   <Services></Services>
+
+  <Projects></Projects>
+
+  <!-- <ReviewJumbotron></ReviewJumbotron> -->
   
   <Footer></Footer>
   </template>
@@ -17,6 +21,9 @@
   import Footer from '@/components/Footer.vue';
   import Carousel from '@/components/Carousel.vue';
   import Services from '@/components/Services.vue';
+  import Projects from '@/components/Projects.vue';
+  // import ReviewJumbotron from '@/components/ReviewJumbotron.vue';
+
   export default {
     name: 'HomeView',
     components: {
@@ -24,7 +31,9 @@
       Header,
       Footer,
       Carousel,
-      Services
+      Services,
+      Projects,
+      // ReviewJumbotron
     }
   }
   </script>

@@ -20,23 +20,26 @@
             <a class="nav-link active" aria-current="page" href="#">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">About</a>
+            <RouterLink class="nav-link" to="/about">About</RouterLink>
           </li>
 
           <li class="nav-item">
-            <a class="nav-link" href="#">Services</a>
+            <RouterLink class="nav-link" to="/services">Services</RouterLink>
           </li>
 
           <li class="nav-item">
-            <a class="nav-link" href="#">Projects</a>
+            <RouterLink class="nav-link" to="/projects">Projects</RouterLink>
+
           </li>
 
           <li class="nav-item">
-            <a class="nav-link" href="#">Blog</a>
+             <RouterLink class="nav-link" to="/blog">Blog</RouterLink>
+
           </li>
 
           <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
+            <RouterLink class="nav-link" to="/contact">Contact</RouterLink>
+
           </li>
         </ul>
         <div class="d-flex flex-column">
@@ -48,6 +51,7 @@
 </template>
 
 <script>
+
 export default {
   name: "Navbar",
 };
@@ -74,7 +78,7 @@ body {
   padding: 0.2rem 0.5rem;
   font-size: 1.25rem;
   line-height: 1;
-  background-color: white;
+  background-color: transparent;
   color: white;
 }
 
