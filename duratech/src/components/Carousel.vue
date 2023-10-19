@@ -65,7 +65,7 @@ export default {
 }
 .carousel .item img {
 	max-width: 100%;
-    margin: 0 auto; /* Align slide image horizontally center in Bootstrap v3 */
+    margin: 0 auto;
 }
 .carousel .carousel-control {
 	width: 50px;
@@ -93,7 +93,7 @@ export default {
 	text-transform: uppercase;
 }
 .carousel-caption p {
-	background: #8fc93c;
+	background: #73b925;
 	padding: 10px 20px;
 	font-size: 20px;
 	font-weight: 300;
@@ -119,11 +119,11 @@ export default {
 	color: #fff;
 }
 .carousel-action .btn-success {
-	background: #8fc93c;
+	background: #73b925;
 	border: none;
 }
 .carousel-action .btn-success:hover {
-	background: #87bd35;
+	background: #73b925;
 }
 .carousel-indicators li, .carousel-indicators li.active {
 	width: 11px;
@@ -136,7 +136,7 @@ export default {
 	border: 1px solid #fff;
 }
 .carousel-indicators li.active {
-	background: #8fc93c;
-	border-color: #8fc93c;
+	background: #73b925;
+	border-color: #73b925;
 }
 </style>

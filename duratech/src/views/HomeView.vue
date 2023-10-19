@@ -9,7 +9,11 @@
 
   <Projects></Projects>
 
-  <!-- <ReviewJumbotron></ReviewJumbotron> -->
+  <Review></Review>
+
+  <Volunteer></Volunteer>
+
+  <Testimonial></Testimonial>
   
   <Footer></Footer>
   </template>
@@ -22,7 +26,9 @@
   import Carousel from '@/components/Carousel.vue';
   import Services from '@/components/Services.vue';
   import Projects from '@/components/Projects.vue';
-  // import ReviewJumbotron from '@/components/ReviewJumbotron.vue';
+  import Review from '@/components/Review.vue';
+  import Volunteer from '@/components/Volunteer.vue';
+  import Testimonial from '@/components/Testimonial.vue';
 
   export default {
     name: 'HomeView',
@@ -33,7 +39,9 @@
       Carousel,
       Services,
       Projects,
-      // ReviewJumbotron
+      Review,
+      Volunteer,
+      Testimonial
     }
   }
   </script>

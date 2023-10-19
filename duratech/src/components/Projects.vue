@@ -131,7 +131,7 @@
                 <div class="col-md-4">
                     <div class="card mb-4">
                         <div class="volunteer-card">
-                            <iconify-icon icon="iconoir:donate" style="color: #73b925;" width="100"></iconify-icon>
+                            <iconify-icon icon="iconoir:donate" width="100" class="icon-card"></iconify-icon>
                             <p class="volunteer-card-text">Donate Now</p>
                         </div>
                     </div>
@@ -140,7 +140,7 @@
                 <div class="col-md-4">
                     <div class="card mb-4">
                         <div class="volunteer-card">
-                            <iconify-icon icon="pepicons-pencil:people" style="color: #73b925;" width="100"></iconify-icon>
+                            <iconify-icon icon="pepicons-pencil:people" width="100" class="icon-card"></iconify-icon>
                             <p class="volunteer-card-text">Project Sponsor</p>
                         </div>
                     </div>
@@ -148,8 +148,8 @@
 
                 <div class="col-md-4">
                     <div class="card mb-4">
-                        <div class="volunteer-card">
-                            <iconify-icon icon="fluent-emoji-high-contrast:raising-hands" style="color: #73b925;" width="100"></iconify-icon>
+                        <div class="volunteer-card"> 
+                            <iconify-icon icon="fluent-emoji-high-contrast:raising-hands" width="100" class="icon-card"></iconify-icon>
                             <p class="volunteer-card-text">Be A Volunteer</p>
                         </div>
                     </div>
@@ -175,10 +175,17 @@ export default {
 }
 
 .volunteer-card:hover {
+    background-color: #73b925;
+    color: white;
     cursor: pointer;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
 }
 
+.volunteer-card:hover .icon-card{
+    color: white;
+}
+.icon-card {
+    color: #73b925;
+}
 .volunteer-card {
     display: flex;
     flex-direction: column;
@@ -186,7 +193,6 @@ export default {
     justify-content: flex-end;
     height: 150px;
 }
-
 .projects-card {
     background-color: white;
     width: 300px;

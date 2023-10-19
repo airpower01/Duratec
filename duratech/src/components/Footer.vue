@@ -3,7 +3,7 @@
     
  </div>
  <div class="footer-2">
-    <p>&copy; Copyright ©2023 All rights reserved</p>
+    <p>&copy; Copyright ©2023 PT Petrotec Air Power</p>
   </div>
 </template>
 
