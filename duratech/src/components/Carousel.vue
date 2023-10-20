@@ -1,5 +1,5 @@
 <template>
-    <div class="container-lg">
+    <div class="container-lg mb-5">
 	<div class="row">
 		<div class="col-md-12">
 			<div id="myCarousel" class="carousel slide" data-ride="carousel">

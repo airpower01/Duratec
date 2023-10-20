@@ -17,7 +17,7 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <RouterLink class="nav-link" to="/">Home</RouterLink>
           </li>
           <li class="nav-item">
             <RouterLink class="nav-link" to="/about">About</RouterLink>
@@ -71,7 +71,7 @@ body {
   padding-bottom: 10px;
   font-size: 15px;
   margin-right: 20px;
-  color: #fff;
+  color: #F4F2F2;
 }
 
 .navbar-toggler {
@@ -79,11 +79,15 @@ body {
   font-size: 1.25rem;
   line-height: 1;
   background-color: transparent;
-  color: white;
+  color: #F4F2F2;
 }
 
 .nav-link {
-  color: #e1e9de !important;
+  color: #E7E3E3 !important;
+}
+
+.nav-link::selection {
+  color: white !important;
 }
 
 .wrapper {
