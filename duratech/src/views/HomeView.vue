@@ -14,7 +14,11 @@
   <Volunteer></Volunteer>
 
   <Testimonial></Testimonial>
-  
+
+  <Jumbotron></Jumbotron>
+
+  <Blog></Blog>
+
   <Footer></Footer>
   </template>
   
@@ -29,20 +33,24 @@
   import Review from '@/components/Review.vue';
   import Volunteer from '@/components/Volunteer.vue';
   import Testimonial from '@/components/Testimonial.vue';
+  import Jumbotron from '@/components/Jumbotron.vue';
+  import Blog from '@/components/Blog.vue';
 
   export default {
     name: 'HomeView',
     components: {
-      Navbar,
-      Header,
-      Footer,
-      Carousel,
-      Services,
-      Projects,
-      Review,
-      Volunteer,
-      Testimonial
-    }
+    Navbar,
+    Header,
+    Footer,
+    Carousel,
+    Services,
+    Projects,
+    Review,
+    Volunteer,
+    Testimonial,
+    Jumbotron,
+    Blog
+  }
   }
   </script>
   

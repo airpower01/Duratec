@@ -120,7 +120,7 @@
 <div class="container mt-5">
     <div class="row">
         <div class="col-md-6">
-            <img src="https://tse1.mm.bing.net/th?id=OIP.5KGcrfzmq22o_hE5YD4OVQHaFj&pid=Api&P=0&h=180" width="700" alt="Your Photo" class="img-fluid">
+            <img src="https://tse1.mm.bing.net/th?id=OIP.5KGcrfzmq22o_hE5YD4OVQHaFj&pid=Api&P=0&h=180" width="700" alt="#   " class="img-fluid">
         </div>
         <div class="col-md-6">
             <p style="color: #73b925; font-size:12px ; font-weight: bold; letter-spacing: 1px;">BECOME A VOLUNTEER</p>
