@@ -17,28 +17,29 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <RouterLink class="nav-link" to="/">Home</RouterLink>
+            <RouterLink class="nav-link" :to="{name:'home'}">Home</RouterLink>
           </li>
+          
           <li class="nav-item">
-            <RouterLink class="nav-link" to="/about">About</RouterLink>
-          </li>
-
-          <li class="nav-item">
-            <RouterLink class="nav-link" to="/services">Services</RouterLink>
+            <RouterLink class="nav-link" :to="{name:'about'}">About</RouterLink>
           </li>
 
           <li class="nav-item">
-            <RouterLink class="nav-link" to="/projects">Projects</RouterLink>
-
+            <RouterLink class="nav-link" :to="{name:'services'}">Services</RouterLink>
           </li>
 
           <li class="nav-item">
-             <RouterLink class="nav-link" to="/blog">Blog</RouterLink>
+            <RouterLink class="nav-link" :to="{name:'projects'}">Projects</RouterLink>
 
           </li>
 
           <li class="nav-item">
-            <RouterLink class="nav-link" to="/contact">Contact</RouterLink>
+             <RouterLink class="nav-link" :to="{name:'blog'}">Blog</RouterLink>
+
+          </li>
+
+          <li class="nav-item">
+            <RouterLink class="nav-link" :to="{name:contact}">Contact</RouterLink>
 
           </li>
         </ul>
