@@ -17,26 +17,29 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <RouterLink class="nav-link" to="/">Home</RouterLink>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">About</a>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link" href="#">Services</a>
+            <RouterLink class="nav-link" to="/about">About</RouterLink>
           </li>
 
           <li class="nav-item">
-            <a class="nav-link" href="#">Projects</a>
+            <RouterLink class="nav-link" to="/services">Services</RouterLink>
           </li>
 
           <li class="nav-item">
-            <a class="nav-link" href="#">Blog</a>
+            <RouterLink class="nav-link" to="/projects">Projects</RouterLink>
+
           </li>
 
           <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
+             <RouterLink class="nav-link" to="/blog">Blog</RouterLink>
+
+          </li>
+
+          <li class="nav-item">
+            <RouterLink class="nav-link" to="/contact">Contact</RouterLink>
+
           </li>
         </ul>
         <div class="d-flex flex-column">
@@ -48,6 +51,7 @@
 </template>
 
 <script>
+
 export default {
   name: "Navbar",
 };
@@ -67,19 +71,23 @@ body {
   padding-bottom: 10px;
   font-size: 15px;
   margin-right: 20px;
-  color: #fff;
+  color: #F4F2F2;
 }
 
 .navbar-toggler {
   padding: 0.2rem 0.5rem;
   font-size: 1.25rem;
   line-height: 1;
-  background-color: white;
-  color: white;
+  background-color: transparent;
+  color: #F4F2F2;
 }
 
 .nav-link {
-  color: #e1e9de !important;
+  color: #E7E3E3 !important;
+}
+
+.nav-link::selection {
+  color: white !important;
 }
 
 .wrapper {
@@ -107,35 +115,3 @@ body {
   z-index: 10;
 }
 </style>
-
-<!-- <template>
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#">Your Logo</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav">
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">About</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Services</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Contact</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
-  
-  </template>
-  
-  <script>
-  export default {
-      name: 'Navbar'
-  }   
-  </script> -->

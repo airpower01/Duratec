@@ -2,32 +2,25 @@
     <Header></Header>
     <Navbar></Navbar>
     <Carousel></Carousel>
-    <Jumbotron></Jumbotron>
-    <Review></Review>
-    <Volunteer></Volunteer>
-    <Testimonial></Testimonial>
+    <Services></Services>
     <Footer></Footer>
+<p>Services</p>
+
 </template>
 
 <script>
 import Carousel from '@/components/Carousel.vue';
 import Footer from '@/components/Footer.vue';
 import Header from '@/components/Header.vue';
-import Jumbotron from '@/components/Jumbotron.vue';
 import Navbar from '@/components/Navbar.vue';
-import Review from '@/components/Review.vue';
-import Testimonial from '@/components/Testimonial.vue';
-import Volunteer from '@/components/Volunteer.vue';
+import Services from '@/components/Services.vue';
 export default {
-    name:'AboutView',
+    name: 'ServicesView',
     components: {
     Header,
     Navbar,
     Carousel,
-    Jumbotron,
-    Review,
-    Volunteer,
-    Testimonial,
+    Services,
     Footer
 }
 }
