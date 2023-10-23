@@ -1,33 +1,50 @@
 <template>
-  <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #73b925;">
-  <div class="container-fluid">
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <RouterLink class="nav-link" :to="{name: 'home'}">Home</RouterLink>
-        </li>
-        <li class="nav-item">
-          <RouterLink class="nav-link" :to="{name:'about'}">About</RouterLink>
-        </li>
-        <li class="nav-item">
-          <RouterLink class="nav-link" :to="{name:'services'}">Services</RouterLink>
-        </li>
-        <li class="nav-item">
-          <RouterLink class="nav-link" :to="{name:'projects'}">Projects</RouterLink>
-        </li>
-        <li class="nav-item">
-          <RouterLink class="nav-link" :to="{name:'blog'}">Blog</RouterLink>
-        </li>
-        <li class="nav-item">
-          <RouterLink class="nav-link" :to="{name:'contact'}">Contact</RouterLink>
-        </li>
-      </ul>
+  <nav class="navbar navbar-expand-lg navbar-green navbar-dark" style="height: 73px;">
+    <div class="wrapper"></div>
+    <div class="container-fluid all-show">
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+        MENU
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <RouterLink class="nav-link" to="/">Home</RouterLink>
+          </li>
+          <li class="nav-item">
+            <RouterLink class="nav-link" to="/about">About</RouterLink>
+          </li>
+
+          <li class="nav-item">
+            <RouterLink class="nav-link" to="/services">Services</RouterLink>
+          </li>
+
+          <li class="nav-item">
+            <RouterLink class="nav-link" to="/projects">Projects</RouterLink>
+
+          </li>
+
+          <li class="nav-item">
+             <RouterLink class="nav-link" to="/blog">Blog</RouterLink>
+
+          </li>
+
+          <li class="nav-item">
+            <RouterLink class="nav-link" to="/contact">Contact</RouterLink>
+
+          </li>
+        </ul>
+      </div>
     </div>
-  </div>
-</nav>
+  </nav>
 </template>
 
 <script>
