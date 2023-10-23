@@ -6,7 +6,7 @@
     <div class="row">
         <div class="col-md-3">
             <div class="projects-card">
-                <div class="card-body">
+                <div class="card-body"  style="width: 280px; margin-left: 5px;">
                     <p class="card-title" style="color: #73b925;">ECOLOGY</p>
                     <p style="font-weight: bold; font-size: 20px;"> Ecological Friendly </p>
                     <p style=" opacity: 0.5;">Far from the countries Vokalia and Consonantia.</p>
@@ -26,17 +26,53 @@
         </div>
         <div class="col-md-3">
             <div class="projects-card">
-                <div class="card-body">
-                    <img src="https://preview.colorlib.com/theme/ecogreen/images/gallery-4.jpg" width="340" height="260" alt="">
+                <div class="card-body"  style="width: 280px; margin-left: 5px;">
+                    <img src="https://preview.colorlib.com/theme/ecogreen/images/gallery-4.jpg" width="280" height="260" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="projects-card">
+                <div class="card-body" style="width: 280px; margin-left: 5px;">
+                    <p class="card-title" style="color: #73b925;">WATER</p>
+                    <p style="font-weight: bold; font-size: 20px;"> Water Pollution </p>
+                    <p style=" opacity: 0.5;">Far from the countries Vokalia and Consonantia..</p>
+                    <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="70"
+                         aria-valuemin="0" aria-valuemax="100" style="background-color: #D7F1B9 ;width:70%">
+                        <span style="color: #73b925;">70%</span> 
+                    </div>
+                </div>
+                <div class="d-flex justify-content-between mt-3">
+                <p><span style="opacity: 0.5;">Raised:</span> $9800</p>
+                <p><span style="opacity: 0.5;">Goal:</span> <span style="color: #73b925;">15000</span> </p>
+            </div>
+            <button class="donate-button">DONATE NOW!</button>
                 </div>
             </div>
         </div>
         <div class="col-md-3">
             <div class="projects-card">
                 <div class="card-body">
-                    <p class="card-title" style="color: #73b925;">WATER</p>
-                    <p style="font-weight: bold; font-size: 20px;"> Water Pollution </p>
-                    <p style=" opacity: 0.5;">Far from the countries Vokalia and Consonantia..</p>
+                    <img src="https://preview.colorlib.com/theme/ecogreen/images/gallery-4.jpg" width="280" height="260" style="margin-left: 20px;" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-3">
+            <div class="projects-card">
+                <div class="card-body">
+                    <img src="https://preview.colorlib.com/theme/ecogreen/images/gallery-4.jpg" width="280" height="260" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="projects-card">
+                <div class="card-body"  style="width: 280px; margin-left: 5px;">
+                    <p class="card-title" style="color: #73b925;">ECOLOGY</p>
+                    <p style="font-weight: bold; font-size: 20px;"> Planting more trees </p>
+                    <p style=" opacity: 0.5;">Far from the countries Vokalia and Consonantia.</p>
                     <div class="progress">
                     <div class="progress-bar" role="progressbar" aria-valuenow="70"
                          aria-valuemin="0" aria-valuemax="100" style="background-color: #D7F1B9 ;width:70%">
@@ -58,45 +94,9 @@
                 </div>
             </div>
         </div>
-    </div>
-    <div class="row">
         <div class="col-md-3">
             <div class="projects-card">
-                <div class="card-body">
-                    <img src="https://preview.colorlib.com/theme/ecogreen/images/gallery-4.jpg" width="340" height="260" alt="">
-                </div>
-            </div>
-        </div>
-        <div class="col-md-3">
-            <div class="projects-card">
-                <div class="card-body">
-                    <p class="card-title" style="color: #73b925;">ECOLOGY</p>
-                    <p style="font-weight: bold; font-size: 20px;"> Planting more trees </p>
-                    <p style=" opacity: 0.5;">Far from the countries Vokalia and Consonantia.</p>
-                    <div class="progress">
-                    <div class="progress-bar" role="progressbar" aria-valuenow="70"
-                         aria-valuemin="0" aria-valuemax="100" style="background-color: #D7F1B9 ;width:70%">
-                        <span style="color: #73b925;">70%</span> 
-                    </div>
-                </div>
-                <div class="d-flex justify-content-between mt-3">
-                <p><span style="opacity: 0.5;">Raised:</span> $9800</p>
-                <p><span style="opacity: 0.5;">Goal:</span> <span style="color: #73b925;">15000</span> </p>
-            </div>
-            <button class="donate-button">DONATE NOW!</button>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-3">
-            <div class="projects-card">
-                <div class="card-body">
-                    <img src="https://preview.colorlib.com/theme/ecogreen/images/gallery-4.jpg" width="340" height="260" alt="">
-                </div>
-            </div>
-        </div>
-        <div class="col-md-3">
-            <div class="projects-card">
-                <div class="card-body">
+                <div class="card-body"  style="width: 280px; margin-left: 5px;">
                     <p class="card-title" style="color: #73b925;">PLANTING</p>
                     <p style="font-weight: bold; font-size: 20px;"> Planting Trees </p>
                     <p style=" opacity: 0.5;">Far from the countries Vokalia and Consonantia.</p>

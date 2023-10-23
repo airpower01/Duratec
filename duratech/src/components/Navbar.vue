@@ -1,53 +1,33 @@
 <template>
-  <nav class="navbar navbar-expand-lg navbar-green navbar-dark" style="height: 73px;">
-    <div class="wrapper"></div>
-    <div class="container-fluid all-show">
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-        MENU
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <RouterLink class="nav-link" to="/">Home</RouterLink>
-          </li>
-          <li class="nav-item">
-            <RouterLink class="nav-link" to="/about">About</RouterLink>
-          </li>
-
-          <li class="nav-item">
-            <RouterLink class="nav-link" to="/services">Services</RouterLink>
-          </li>
-
-          <li class="nav-item">
-            <RouterLink class="nav-link" to="/projects">Projects</RouterLink>
-
-          </li>
-
-          <li class="nav-item">
-             <RouterLink class="nav-link" to="/blog">Blog</RouterLink>
-
-          </li>
-
-          <li class="nav-item">
-            <RouterLink class="nav-link" to="/contact">Contact</RouterLink>
-
-          </li>
-        </ul>
-        <div class="d-flex flex-column">
-          <small class="text-dark fw-bolder mr-5" style="letter-spacing: 2px; font-weight: bold;"> <iconify-icon icon="solar:hand-heart-linear" style="color: #7bd22b; margin-right: 2px;" width="17"></iconify-icon> DONATE NOW!</small>
-        </div>
-      </div>
+  <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #73b925;">
+  <div class="container-fluid">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <RouterLink class="nav-link" :to="{name: 'home'}">Home</RouterLink>
+        </li>
+        <li class="nav-item">
+          <RouterLink class="nav-link" :to="{name:'about'}">About</RouterLink>
+        </li>
+        <li class="nav-item">
+          <RouterLink class="nav-link" :to="{name:'services'}">Services</RouterLink>
+        </li>
+        <li class="nav-item">
+          <RouterLink class="nav-link" :to="{name:'projects'}">Projects</RouterLink>
+        </li>
+        <li class="nav-item">
+          <RouterLink class="nav-link" :to="{name:'blog'}">Blog</RouterLink>
+        </li>
+        <li class="nav-item">
+          <RouterLink class="nav-link" :to="{name:'contact'}">Contact</RouterLink>
+        </li>
+      </ul>
     </div>
-  </nav>
+  </div>
+</nav>
 </template>
 
 <script>
@@ -64,6 +44,7 @@ body {
   background-color: #eee;
   font-family: "Poppins", sans-serif;
 }
+
 
 .navbar-nav > li > a {
   font-weight: bold;
@@ -90,25 +71,13 @@ body {
   color: white !important;
 }
 
-.wrapper {
-  width: 98.7%;
-  position: absolute;
-  height: 100%;
-  background-color: #fff;
-  clip-path: polygon(75% 0, 100% 0, 100% 50%, 100% 100%, 71% 100%);
-  transition: 1s all;
-}
+
 
 .navbar-brand {
   color: #fff;
   font-family: "Allerta Stencil", sans-serif;
   margin-bottom: 4px;
   font-size: 27px;
-}
-
-.navbar-green {
-  background-color: #73b925;
-  color: #fff;
 }
 
 .all-show {

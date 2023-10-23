@@ -1,9 +1,13 @@
 <template>
-    <Header></Header>
-    <Navbar></Navbar>
+        <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="/" style="color: #636b6f;">Home</a></li>
+      <li class="breadcrumb-item active">
+        <a href="/blog" style="color: #636b6f;">Blog</a>
+      </li>
+    </ol>
     <Carousel></Carousel>
     <Blog></Blog>
-    <Footer></Footer>
+
     Blog
 </template>
 <script>
