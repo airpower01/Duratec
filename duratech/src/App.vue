@@ -1,9 +1,9 @@
 
 
 <template>
-  <Header></Header>
+  <Header></Header> 
   <Navbar></Navbar>
-  <router-view/>
+  <RouterView/>
   <Footer></Footer>
 </template>
 <script>
