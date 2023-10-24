@@ -1,12 +1,16 @@
 <template>
-    <Header></Header>
-    <Navbar></Navbar>
+        <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="/" style="color: #636b6f;">Home</a></li>
+      <li class="breadcrumb-item active">
+        <a href="/about" style="color: #636b6f;">About</a>
+      </li>
+    </ol>
     <Carousel></Carousel>
     <Jumbotron></Jumbotron>
     <Review></Review>
     <Volunteer></Volunteer>
     <Testimonial></Testimonial>
-    <Footer></Footer>
+
 </template>
 
 <script>

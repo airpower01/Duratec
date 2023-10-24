@@ -42,9 +42,6 @@
 
           </li>
         </ul>
-        <div class="d-flex flex-column">
-          <small class="text-dark fw-bolder mr-5" style="letter-spacing: 2px; font-weight: bold;"> <iconify-icon icon="solar:hand-heart-linear" style="color: #7bd22b; margin-right: 2px;" width="17"></iconify-icon> DONATE NOW!</small>
-        </div>
       </div>
     </div>
   </nav>
@@ -64,6 +61,7 @@ body {
   background-color: #eee;
   font-family: "Poppins", sans-serif;
 }
+
 
 .navbar-nav > li > a {
   font-weight: bold;
@@ -90,25 +88,13 @@ body {
   color: white !important;
 }
 
-.wrapper {
-  width: 98.7%;
-  position: absolute;
-  height: 100%;
-  background-color: #fff;
-  clip-path: polygon(75% 0, 100% 0, 100% 50%, 100% 100%, 71% 100%);
-  transition: 1s all;
-}
+
 
 .navbar-brand {
   color: #fff;
   font-family: "Allerta Stencil", sans-serif;
   margin-bottom: 4px;
   font-size: 27px;
-}
-
-.navbar-green {
-  background-color: #73b925;
-  color: #fff;
 }
 
 .all-show {

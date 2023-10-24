@@ -4,89 +4,54 @@
     Over <span style="color: #7bd22b">40K+</span> People Working with us
   </p>
 
-  <div class="container mr-2">
-    <div class="row">
-      <div class="col-md-2 mr-3">
-        <div class="services-card">
-          <iconify-icon
-            icon="mdi:recycle"
-            style="margin-left: 75px"
-            width="50"
-            class="card-icon"
-          ></iconify-icon>
-          <div class="card-body">
-            <h5 class="card-title">Recyling</h5>
-            <p class="card-text">
-              Far far away, behind the word mountains, far from the countries
-              Vokalia and Consonantia.
+  <div class="services-boxed">
+    <div class="container">
+      <div class="row people">
+        <div class="col-md-4 col-lg-3 item">
+          <div class="box">
+            <img class="rounded-circle" src="assets/img/1.jpg" />
+            <h3 class="name">Recyling</h3>
+            <p class="description">
+              Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus.
+              Praesent aliquam in tellus eu gravida. Aliquam varius finibus est,
+              et interdum justo suscipit id. Etiam dictum feugiat tellus, a
+              semper massa.
             </p>
           </div>
         </div>
-      </div>
-      <div class="col-md-2 mr-3">
-        <div class="services-card">
-          <iconify-icon
-            icon="ion:water-outline"
-            style="margin-left: 75px"
-            width="50"
-            class="card-icon"
-          ></iconify-icon>
-          <div class="card-body">
-            <h5 class="card-title">Water Refine</h5>
-            <p class="card-text">
-              Far far away, behind the word mountains, far from the countries
-              Vokalia and Consonantia.
+        <div class="col-md-4 col-lg-3 item">
+          <div class="box">
+            <img class="rounded-circle" src="assets/img/2.jpg" />
+            <h3 class="name">Water Refine</h3>
+            <p class="description">
+              Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus.
+              Praesent aliquam in tellus eu gravida. Aliquam varius finibus est,
+              et interdum justo suscipit id. Etiam dictum feugiat tellus, a
+              semper massa.
             </p>
           </div>
         </div>
-      </div>
-      <div class="col-md-2 mr-3">
-        <div class="services-card">
-          <iconify-icon
-            icon="game-icons:plants-and-animals"
-            style="margin-left: 75px"
-            width="50"
-            class="card-icon"
-          ></iconify-icon>
-          <div class="card-body">
-            <h5 class="card-title">Ecosystem</h5>
-            <p class="card-text">
-              Far far away, behind the word mountains, far from the countries
-              Vokalia and Consonantia.
+        <div class="col-md-4 col-lg-3 item">
+          <div class="box">
+            <img class="rounded-circle" src="assets/img/3.jpg" />
+            <h3 class="name">Recyling</h3>
+            <p class="description">
+              Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus.
+              Praesent aliquam in tellus eu gravida. Aliquam varius finibus est,
+              et interdum justo suscipit id. Etiam dictum feugiat tellus, a
+              semper massa.
             </p>
           </div>
         </div>
-      </div>
-      <div class="col-md-2 mr-3">
-        <div class="services-card">
-          <iconify-icon
-            icon="mdi:solar-energy-outline"
-            style="margin-left: 75px"
-            class="card-icon"
-            width="50"
-          ></iconify-icon>
-          <div class="card-body">
-            <h5 class="card-title">Solar Energy</h5>
-            <p class="card-text">
-              Far far away, behind the word mountains, far from the countries
-              Vokalia and Consonantia.
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-2 mr-3">
-        <div class="services-card">
-          <iconify-icon
-            icon="ion:earth-outline"
-            style="margin-left: 75px"
-            class="card-icon"
-            width="50"
-          ></iconify-icon>
-          <div class="card-body">
-            <h5 class="card-title">Save Animals</h5>
-            <p class="card-text">
-              Far far away, behind the word mountains, far from the countries
-              Vokalia and Consonantia.
+        <div class="col-md-4 col-lg-3 item">
+          <div class="box">
+            <img class="rounded-circle" src="assets/img/1.jpg" />
+            <h3 class="name">Water Refine</h3>
+            <p class="description">
+              Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus.
+              Praesent aliquam in tellus eu gravida. Aliquam varius finibus est,
+              et interdum justo suscipit id. Etiam dictum feugiat tellus, a
+              semper massa.
             </p>
           </div>
         </div>
@@ -102,36 +67,90 @@ export default {
 </script>
 
 <style>
-.card-icon {
-  color: #7bd22b;
-}
-.services-card {
-  background-color: white;
-  width: 200px;
-  font-weight: bold;
-  height: 300px;
+.services-boxed {
+  color: #313437;
 }
 
-.card-title {
-  font-weight: bold;
-}
-.services-card:hover {
-  background-color: #7bd22b;
-  color: white;
-}
-.services-card:hover .card-icon {
-  color: white; 
-}
-.card-text {
-  opacity: 0.5;
+.services-boxed p {
+  color: #7d8285;
 }
 
-.services-card:hover .card-text {
+.services-boxed h2 {
+  font-weight: bold;
+  margin-bottom: 40px;
+  padding-top: 40px;
+  color: inherit;
+}
+
+.services-boxed h2 {
+  margin-bottom: 25px;
+  padding-top: 25px;
+  font-size: 24px;
+}
+
+.services-boxed .intro {
+  font-size: 16px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.services-boxed .intro p {
+  margin-bottom: 0;
+}
+
+.services-boxed .people {
+  padding: 50px 0;
+}
+
+.services-boxed .item {
+  text-align: center;
+}
+
+.services-boxed .item .box {
+  text-align: center;
+  padding: 30px;
+  background-color: #fff;
+  margin-bottom: 30px;
+}
+
+.services-boxed .item .name {
+  font-weight: bold;
+  margin-top: 28px;
+  margin-bottom: 8px;
+}
+
+.services-boxed .item .title {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #d0d0d0;
+  letter-spacing: 2px;
+  font-size: 13px;
+}
+
+.services-boxed .item .description {
+  font-size: 15px;
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+
+.services-boxed .item img {
+  max-width: 160px;
+}
+
+.services-boxed .social {
+  font-size: 18px;
+  color: #a2a8ae;
+}
+
+.services-boxed .social a {
+  color: inherit;
+  margin: 0 10px;
+  display: inline-block;
+  opacity: 0.7;
+}
+
+.services-boxed .social a:hover {
   opacity: 1;
-}
-
-.card-icon:hover {
-  color: white;
 }
 
 #title {

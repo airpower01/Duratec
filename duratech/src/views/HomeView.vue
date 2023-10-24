@@ -1,8 +1,5 @@
 <template>
-  <Header></Header>
-
-  <Navbar></Navbar>
-
+  
   <Carousel></Carousel>
 
   <Services></Services>
@@ -19,7 +16,7 @@
 
   <Blog></Blog>
 
-  <Footer></Footer>
+
   </template>
   
   <script>

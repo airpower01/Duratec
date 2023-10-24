@@ -1,10 +1,12 @@
 <template>
-    <Header></Header>
-    <Navbar></Navbar>
+        <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="/" style="color: #636b6f;">Home</a></li>
+      <li class="breadcrumb-item active">
+        <a href="/services" style="color: #636b6f;">Services</a>
+      </li>
+    </ol>
     <Carousel></Carousel>
     <Services></Services>
-    <Footer></Footer>
-<p>Services</p>
 
 </template>
 
