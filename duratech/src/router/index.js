@@ -5,6 +5,7 @@ import AboutView from '../views/AboutView.vue'
 import ProjectsView from '../views/ProjectsView.vue'
 import BlogView from '../views/BlogView.vue'
 import ContactView from '../views/ContactView.vue'
+import NotFound from '../components/NotFound.vue'
 
 const routes = [
   {
@@ -36,6 +37,11 @@ const routes = [
     path: '/contact',
     name: 'contact',
     component: ContactView
+  },
+  {
+    path: '/:pathMatch(.*)*', 
+    name: 'notFound',
+    component: NotFound
   }
   
  

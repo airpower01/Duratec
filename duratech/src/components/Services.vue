@@ -9,7 +9,7 @@
       <div class="row people">
         <div class="col-md-4 col-lg-3 item">
           <div class="box">
-            <img class="rounded-circle" src="assets/img/1.jpg" />
+            <img class="rounded-circle" src="../assets/img/hanbell_screw.png" />
             <h3 class="name">Recyling</h3>
             <p class="description">
               Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus.
@@ -21,7 +21,7 @@
         </div>
         <div class="col-md-4 col-lg-3 item">
           <div class="box">
-            <img class="rounded-circle" src="assets/img/2.jpg" />
+            <img class="rounded-circle" src="../assets/img/hanbell_screw.png" />
             <h3 class="name">Water Refine</h3>
             <p class="description">
               Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus.
@@ -33,7 +33,7 @@
         </div>
         <div class="col-md-4 col-lg-3 item">
           <div class="box">
-            <img class="rounded-circle" src="assets/img/3.jpg" />
+            <img class="rounded-circle" src="../assets/img/hanbell_screw.png" />
             <h3 class="name">Recyling</h3>
             <p class="description">
               Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus.
@@ -45,7 +45,7 @@
         </div>
         <div class="col-md-4 col-lg-3 item">
           <div class="box">
-            <img class="rounded-circle" src="assets/img/1.jpg" />
+            <img class="rounded-circle" src="../assets/img/hanbell_screw.png" />
             <h3 class="name">Water Refine</h3>
             <p class="description">
               Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus.

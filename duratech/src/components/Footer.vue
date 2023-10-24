@@ -8,7 +8,7 @@
     >
       <div class="container">
         <div class="row">
-          <div class="col-md-9 text-left">
+          <div class="col-md-9">
             <div>
               <p
                 style="

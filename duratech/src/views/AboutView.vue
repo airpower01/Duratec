@@ -1,11 +1,6 @@
 <template>
-        <ol class="breadcrumb">
-      <li class="breadcrumb-item"><a href="/" style="color: #636b6f;">Home</a></li>
-      <li class="breadcrumb-item active">
-        <a href="/about" style="color: #636b6f;">About</a>
-      </li>
-    </ol>
-    <Carousel></Carousel>
+       
+    <NavigationPoster route="/about" page="ABOUT" pageTitle="About Us"></NavigationPoster>
     <Jumbotron></Jumbotron>
     <Review></Review>
     <Volunteer></Volunteer>
@@ -14,11 +9,11 @@
 </template>
 
 <script>
-import Carousel from '@/components/Carousel.vue';
 import Footer from '@/components/Footer.vue';
 import Header from '@/components/Header.vue';
 import Jumbotron from '@/components/Jumbotron.vue';
 import Navbar from '@/components/Navbar.vue';
+import NavigationPoster from '@/components/NavigationPoster.vue';
 import Review from '@/components/Review.vue';
 import Testimonial from '@/components/Testimonial.vue';
 import Volunteer from '@/components/Volunteer.vue';
@@ -27,12 +22,12 @@ export default {
     components: {
     Header,
     Navbar,
-    Carousel,
     Jumbotron,
     Review,
     Volunteer,
     Testimonial,
-    Footer
+    Footer,
+    NavigationPoster
 }
 }
 </script>

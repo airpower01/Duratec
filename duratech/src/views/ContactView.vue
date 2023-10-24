@@ -16,7 +16,7 @@
     <div class="display-box row padded" style="background-color: #f0f0f0; padding: 20px; overflow: hidden">
       <div class="container">
         <div class="col-sm-12 aos-init aos-animate" style="padding-right: 0px; background-color: #ffffff" data-aos="fade-up">
-          <div style="display: table; width: 100%">
+          <div style="display: table; width: 100%;">
             <!-- form -->
             <form
               method="post"
@@ -47,7 +47,7 @@
                     value=""
                     required="true"
                   />
-                  First
+                  <small class="d-flex text-right">first</small>
                 </div>
                 <div class="col-sm-6">
                   <label style="color: white">_</label>
@@ -59,11 +59,11 @@
                     value=""
                     required="true"
                   />
-                  Last
+                  <small class="d-flex text-right">last</small>
                 </div>
               </div>
               <div class="form-group row">
-                <div class="col-md-6">
+                <div class="col-md-6" style="margin-top: 10px;">
                   <label
                     >Your Company Name<span style="color: red">*</span></label
                   >
@@ -76,7 +76,7 @@
                     required="true"
                   />
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-6"  style="margin-top: 10px;">
                   <label>E-mail<span style="color: red">*</span></label>
                   <input
                     name="email"
@@ -88,7 +88,7 @@
                   />
                 </div>
               </div>
-              <div class="form-group">
+              <div class="form-group"  style="margin-top: 10px;">
                 <label>Phone Number<span style="color: red">*</span></label>
                 <input
                   name="pnumber"
@@ -99,7 +99,7 @@
                   required="true"
                 />
               </div>
-              <div class="form-group">
+              <div class="form-group"  style="margin-top: 10px;">
                 <label>Address<span style="color: red">*</span></label>
                 <textarea
                   name="address"
@@ -110,7 +110,7 @@
                   required="true"
                 ></textarea>
               </div>
-              <div class="form-group">
+              <div class="form-group"  style="margin-top: 10px;">
                 <label
                   >Choose one from following that applies : Do you...</label
                 >
@@ -126,7 +126,7 @@
                   </option>
                 </select>
               </div>
-              <div class="form-group">
+              <div class="form-group"  style="margin-top: 10px;">
                 <label>Message</label>
                 <textarea
                   name="messagedata"
@@ -136,7 +136,7 @@
                   style="resize: vertical"
                 ></textarea>
               </div>
-              <div class="form-group">
+              <div class="form-group"  style="margin-top: 10px;">
                 <span class="pull-left"><small>*required ftrueields</small></span>
                 <input
                   class="pull-right"
@@ -151,7 +151,7 @@
             </form>
 
             <div class="hidden-xs" style="display: table-cell; width: 50%; vertical-align: middle;">
-              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3966.5606610693894!2d106.7615863!3d-6.1894957!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f71b466c3107%3A0x15cc1b88398c6af8!2sPetrotec%20Air%20Power!5e0!3m2!1sen!2sid!4v1568368607911!5m2!1sen!2sid" width="100%" height="500" frameborder="10" style="border: 0" allowfullscreen="false"></iframe>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.559678571271!2d106.76073607568024!3d-6.189626560644231!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f71b4422695b%3A0xa91dc270526105e6!2sPola%20Petro%20Development%2C%20PT!5e0!3m2!1sen!2sid!4v1698132672336!5m2!1sen!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
           </div>
         </div>
@@ -178,7 +178,21 @@ export default {
     color: #636b6f;
 }
 
-/* Media query to make components responsive */
+.col-sm-6 {
+    display: flex;
+    flex-direction: column;
+}
+
+ 
+.col-sm-6 small {
+    align-self: flex-end;
+}
+
+input::placeholder {
+  color: transparent
+}
+
+
 @media (max-width: 768px) {
   .container {
     padding: 10px;

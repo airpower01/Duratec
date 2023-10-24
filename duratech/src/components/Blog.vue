@@ -5,7 +5,7 @@
 <div class="container">
     <div class="row">
         <div class="col-md-3">
-            <div class="projects-card">
+            <div class="blog-card">
                 <div class="card-body">
                  
                     <p style="font-weight: bold; font-size: 20px;" class="blog-name"> Deforestation is the Threat to Our Ecological System </p>
@@ -16,14 +16,14 @@
                 </div>
             </div>
         <div class="col-md-3">
-            <div class="projects-card">
+            <div class="blog-card">
                 <div class="card-body">
-                    <img src="https://preview.colorlib.com/theme/ecogreen/images/gallery-4.jpg" width="340" height="260" alt="">
+                    <img src="../assets/img/motor_ie3_transparant.png" width="280" height="260" alt="">
                 </div>
             </div>
         </div>
         <div class="col-md-3">
-            <div class="projects-card">
+            <div class="blog-card">
                 <div class="card-body">
        
                     <p style="font-weight: bold; font-size: 20px;" class="blog-name"> Deforestation is the Threat to Our Ecological System </p>
@@ -34,23 +34,23 @@
             </div>
         </div>
         <div class="col-md-3">
-            <div class="projects-card">
+            <div class="blog-card">
                 <div class="card-body">
-                    <img src="https://preview.colorlib.com/theme/ecogreen/images/gallery-4.jpg" width="280" height="260" alt="">
+                    <img src="../assets/img/motor_ie3_transparant.png" width="280" height="260" alt="">
                 </div>
             </div>
         </div>
     </div>
     <div class="row">
         <div class="col-md-3">
-            <div class="projects-card">
+            <div class="blog-card">
                 <div class="card-body">
-                    <img src="https://preview.colorlib.com/theme/ecogreen/images/gallery-4.jpg" width="340" height="260" alt="">
+                    <img src="../assets/img/motor_ie3_transparant.png" width="280" height="260" alt="">
                 </div>
             </div>
         </div>
         <div class="col-md-3">
-            <div class="projects-card">
+            <div class="blog-card">
                 <div class="card-body">
          
                     <p style="font-weight: bold; font-size: 20px;" class="blog-name"> Deforestation is the Threat to Our Ecological System </p>
@@ -61,14 +61,14 @@
             </div>
         </div>
         <div class="col-md-3">
-            <div class="projects-card">
+            <div class="blog-card">
                 <div class="card-body">
-                    <img src="https://preview.colorlib.com/theme/ecogreen/images/gallery-4.jpg" width="340" height="260" alt="">
+                    <img src="../assets/img/motor_ie3_transparant.png" width="280" height="260" alt="">
                 </div>
             </div>
         </div>
         <div class="col-md-3">
-            <div class="projects-card">
+            <div class="blog-card">
                 <div class="card-body">
  
                     <p style="font-weight: bold; font-size: 20px;" class="blog-name"> Deforestation is the Threat to Our Ecological System </p>
@@ -98,4 +98,15 @@ export default {
     color: #73b925;
     transition: .3s ease;
 }
+
+.blog-card {
+    background-color: white;
+    width: 300px;
+    font-weight: bold;
+    height: 280px;
+    margin-top: 30px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
 </style>
