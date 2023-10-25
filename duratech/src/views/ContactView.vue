@@ -3,7 +3,7 @@
   <div class="container">
     <ol class="breadcrumb">
       <li class="breadcrumb-item"><a href="/" style="color: #636b6f;">Home</a></li>
-      <li class="breadcrumb-item active"><a href="/contact" style="color: #636b6f;">Contact Us</a></li>
+      <li class="breadcrumb-item "><a href="/contact" style="color: #636b6f;">Contact Us</a></li>
     </ol>
     <div style="padding-left: 15px">
       <h2 class="contact">CONTACT US</h2>
@@ -13,9 +13,9 @@
     </div>
   </div>
   <div class="container-fluid">
-    <div class="display-box row padded" style="background-color: #f0f0f0; padding: 20px; overflow: hidden">
+    <div class="display-box row padded" style="background-color: #f0f0f0; padding: 20px;">
       <div class="container">
-        <div class="col-sm-12 aos-init aos-animate" style="padding-right: 0px; background-color: #ffffff" data-aos="fade-up">
+        <div class="col-sm-12" style="padding-right: 0px; background-color: #ffffff" data-aos="fade-up">
           <div style="display: table; width: 100%;">
             <!-- form -->
             <form
@@ -204,13 +204,16 @@ input::placeholder {
     width: 100%;
   }
   .hidden-xs {
-    display: block;
+    display: none; /* Hide the entire .hidden-xs div */
     width: 100%;
     padding: 0;
+    
   }
   iframe {
     width: 100%;
     height: 300px;
+    display: none; /* Hide the iframe */
+
   }
 }
 </style>
