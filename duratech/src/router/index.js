@@ -6,6 +6,7 @@ import ProjectsView from '../views/ProjectsView.vue'
 import BlogView from '../views/BlogView.vue'
 import ContactView from '../views/ContactView.vue'
 import NotFound from '../components/NotFound.vue'
+import AdminView from '../views/AdminView.vue'
 
 const routes = [
   {
@@ -39,6 +40,11 @@ const routes = [
     component: ContactView
   },
   {
+    path: '/blog/admin',
+    name: 'admin',
+    component: AdminView
+  },
+  {
     path: '/:pathMatch(.*)*', 
     name: 'notFound',
     component: NotFound
@@ -52,5 +58,13 @@ const router = createRouter({
   history: createWebHistory(process.env.BASE_URL),
   routes
 })
+
+router.beforeEach((to, from, next) => {
+  let isAuthenticated = localStorage.getItem('token')
+  if (to.name == 'admin' && !isAuthenticated) next({ name: 'home' })
+
+  else next()
+})
+
 
 export default router

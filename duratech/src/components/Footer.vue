@@ -6,7 +6,7 @@
         background-image: url('https://cdn.discordapp.com/attachments/1020018520836284586/1164412214216773692/pexels-liis-saar-832521_3.jpg?ex=65431e61&is=6530a961&hm=e3e665d60c6521631552458612798ad7b6cff3873275738974ce23582df611ec&');
       "
     >
-      <div class="container">
+      <div class="container" v-if="$route.name !== 'admin'">
         <div class="row">
           <div class="col-md-9">
             <div>

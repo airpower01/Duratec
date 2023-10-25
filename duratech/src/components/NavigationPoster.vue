@@ -12,7 +12,7 @@
       >
       <p class="breadcrumbs">
         <span class="me-2"
-          ><a  style="color: #F5F2F2; font-weight: bold; text-decoration: none; " href={{route}}>HOME <i class="fa fa-chevron-right"></i></a
+          ><a  style="color: #F5F2F2; font-weight: bold; text-decoration: none; " href="/">HOME <i class="fa fa-chevron-right"></i></a
         ></span >
         <span  style="color: #F5F2F2; font-weight: bold; ">{{page}} <i class="fa fa-chevron-right"></i></span>
       </p>

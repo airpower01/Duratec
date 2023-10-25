@@ -1,35 +1,36 @@
 <template>
- <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #7bd22b;">
-  <div class="container-fluid">
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <RouterLink class="nav-link active"  :to="{name:'home'}" >Home</RouterLink>
-        </li>
-        <li class="nav-item">
-          <RouterLink class="nav-link active"  :to="{name:'about'}" >About</RouterLink>
-        </li>
-        <li class="nav-item">
-          <RouterLink class="nav-link active"  :to="{name:'services'}" >Services</RouterLink>
-        </li>
-        <li class="nav-item">
-          <RouterLink class="nav-link active"  :to="{name:'projects'}" >Projects</RouterLink>
-        </li>
-        <li class="nav-item">
-          <RouterLink class="nav-link active"  :to="{name:'blog'}" >Blog</RouterLink>
-        </li>
-        <li class="nav-item">
-          <RouterLink class="nav-link active"  :to="{name:'contact'}" >Contact</RouterLink>
-        </li>
-      </ul>
-     
+  <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #7bd22b;">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <RouterLink class="nav-link" :to="{ name: 'home' }">Home</RouterLink>
+          </li>
+          <li class="nav-item">
+            <RouterLink class="nav-link" :to="{ name: 'about' }">About</RouterLink>
+          </li>
+          <li class="nav-item">
+            <RouterLink class="nav-link" :to="{ name: 'services' }">Services</RouterLink>
+          </li>
+          <li class="nav-item">
+            <RouterLink class="nav-link" :to="{ name: 'projects' }">Projects</RouterLink>
+          </li>
+          <li class="nav-item">
+            <RouterLink class="nav-link" :to="{ name: 'blog' }">Blog</RouterLink>
+          </li>
+          <li class="nav-item">
+            <RouterLink class="nav-link" :to="{ name: 'contact' }">Contact</RouterLink>
+          </li>
+        </ul>
+      </div>
     </div>
-  </div>
-</nav>
+  </nav>
 </template>
+
+
 
 <script>
 
@@ -46,14 +47,13 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
-
 .navbar-nav > li > a {
   font-weight: bold;
   padding-top: 10px;
   padding-bottom: 10px;
   font-size: 15px;
   margin-right: 20px;
-  color: #F4F2F2;
+  color: white;
 }
 
 .navbar-toggler {
@@ -61,11 +61,11 @@ body {
   font-size: 1.25rem;
   line-height: 1;
   background-color: transparent;
-  color: #F4F2F2;
+  color: white;
 }
 
 .nav-link {
-  color: #E7E3E3 !important;
+  color: white !important;
 }
 
 .nav-link::selection {
@@ -73,7 +73,7 @@ body {
 }
 
 .navbar-brand {
-  color: #fff;
+  color: white;
   font-family: "Allerta Stencil", sans-serif;
   margin-bottom: 4px;
   font-size: 27px;
