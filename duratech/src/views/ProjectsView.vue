@@ -1,5 +1,5 @@
 <template>
-      <NavigationPoster route="/projects" page="PROJECTS" pageTitle="Projects" ></NavigationPoster>
+      <NavigationPoster route="/projects" page="PROJECTS" pageTitle="Our Projects" ></NavigationPoster>
 
     <Jumbotron></Jumbotron>
     <Projects></Projects>

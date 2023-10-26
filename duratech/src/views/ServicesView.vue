@@ -1,6 +1,6 @@
 <template>
       
-    <NavigationPoster route="/services" page="SERVICES" pageTitle="Services"  ></NavigationPoster>
+    <NavigationPoster route="/services" page="SERVICES" pageTitle="Our Services"  ></NavigationPoster>
     <Services></Services>
 
 </template>
