@@ -25,6 +25,11 @@
             <RouterLink class="nav-link" :to="{ name: 'contact' }">Contact</RouterLink>
           </li>
         </ul>
+        <ul class="navbar-nav" v-if="$route.name === 'admin'">
+          <li class="nav-item">
+            <button class="nav-link" >Sign out  </button>
+          </li>
+        </ul>
       </div>
     </div>
   </nav>
@@ -36,16 +41,23 @@
 
 export default {
   name: "Navbar",
+  data() {
+    return {
+      isLoggedIn: false
+    }
+  },
+  methods: {
+    handleSignOut() {
+      signOut(auth).then(() => {
+        this.$router.push('/')
+      })
+    }
+  }
 };
 </script>
 
 <style>
 @import url("https://fonts.googleapis.com/css2?family=Allerta+Stencil&display=swap");
-
-body {
-  background-color: #eee;
-  font-family: "Poppins", sans-serif;
-}
 
 .navbar-nav > li > a {
   font-weight: bold;
@@ -74,7 +86,6 @@ body {
 
 .navbar-brand {
   color: white;
-  font-family: "Allerta Stencil", sans-serif;
   margin-bottom: 4px;
   font-size: 27px;
 }

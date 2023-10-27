@@ -2,8 +2,8 @@
 
   <div class="container">
     <ol class="breadcrumb">
-      <li class="breadcrumb-item"><a href="/" style="color: #636b6f;">Home</a></li>
-      <li class="breadcrumb-item "><a href="/contact" style="color: #636b6f;">Contact Us</a></li>
+      <li class="breadcrumb-item"><a href="/" style="color: #636b6f;">HOME</a></li>
+      <li class="breadcrumb-item "><a href="/contact" style="color: #636b6f;">CONTACT US</a></li>
     </ol>
     <div style="padding-left: 15px">
       <h2 class="contact" style="letter-spacing: 2px;">CONTACT US</h2>
@@ -137,7 +137,7 @@
                 ></textarea>
               </div>
               <div class="form-group"  style="margin-top: 10px;">
-                <span class="pull-left"><small>*required ftrueields</small></span>
+                <span class="pull-left"><small>*required truefields</small></span>
                 <input
                   class="pull-right"
                   type="image"
