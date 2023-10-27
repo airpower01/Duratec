@@ -96,7 +96,6 @@ export default {
 	margin: 3px;
 	min-width: 150px;
 	text-transform: uppercase;
-	font-family: 'Oswald', sans-serif;
 }
 .carousel-action .btn-primary {
 	border-color: #000;
