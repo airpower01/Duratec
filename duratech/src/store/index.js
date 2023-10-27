@@ -12,7 +12,7 @@ export const useDuratecStore = defineStore("duratec", {
             try {
                 const { data } = await axios ({
                     method: 'GET',
-                    url: baseUrl + '/blog',
+                    url: `${baseUrl}/blog`,
                     headers:{
                         "API-Key":"Hjkhf637284khfjk"
                     }
