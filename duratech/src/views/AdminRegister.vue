@@ -14,13 +14,11 @@
               </div>
               <div class="p-4" id="formPanel">
                 <div class="text-center mb-5">
-                  <h1 class="customHeading h3 text-uppercase">Login</h1>
+                  <h1 class="customHeading h3 text-uppercase">Register</h1>
                 </div>
-                <form  @submit.prevent="login">
+                <form @submit.prevent="register">
                   <div class="custom-form-group">
-                    <label class="text-uppercase" for="username"
-                      >Username</label
-                    >
+                    <label class="text-uppercase" for="Email">Email</label>
                     <input type="text" v-model="email" class="pb-1" /><span
                       class="pb-1"
                       ><i class="fa fa-user"></i
@@ -30,8 +28,12 @@
                     <label class="text-uppercase" for="password"
                       >Password</label
                     >
-                    <input type="password" id="password" v-model="password" class="pb-1" /><span
+                    <input
+                      type="password"
+                      id="password"
+                      v-model="password"
                       class="pb-1"
+                    /><span class="pb-1"
                       ><i
                         id="showCursor"
                         class="fa fa-eye-slash"
@@ -39,32 +41,33 @@
                       ></i
                     ></span>
                   </div>
-                  <p class="text-center" style="color: red;"  v-if="errMsg">{{ errMsg }}</p>
                   <div class="mt-5">
-                    <button class="w-100 p-2 d-block custom-btn">Login</button>
+                    <button class="w-100 p-2 d-block custom-btn">
+                      Register
+                    </button>
                   </div>
                 </form>
               </div>
             </div>
           </div>
-        </div>    
+        </div>
       </div>
     </div>
   </div>
 </template>
 
 <script>
-import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
+import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
 
 export default {
-  name: "AdminLogin",
+  name: "AdminRegister",
   data() {
     return {
         email: "",
-        password: "",
-        errMsg: ""
+        password: ""
     }
-  }, 
+  }
+   ,
   methods: {
     showPassword(event) {
       this.showPasswordEnabled = !this.showPasswordEnabled;
@@ -74,33 +77,21 @@ export default {
         ? "fa fa-eye"
         : "fa fa-eye-slash";
     },
-    login() {
-      signInWithEmailAndPassword(
+    register() {
+      createUserWithEmailAndPassword(
         getAuth(),
         this.email.trim(),
         this.password
       )
-      .then((data) => {
-        this.$router.push('/blog/admin')
+        .then((data) => {
+        this.$router.push('/admin/login')
           console.log('success')
         })
         .catch((error) => {
-          switch (error.code) {
-            case "auth/invalid-email":
-              this.errMsg = "invalid email"
-              break;
-            case "auth/user-not-found":
-            this.errMsg = "no account with that email was found"
-            break;
-            case "auth/wrong-password":
-              this.errMsg = "incorrect password"
-              break;
-            default:
-              this.errMsg = "Email or password incorrect"
-              break;
-          }
+          console.log(error.code);
+          alert(error.message);
         });
-    }
+    },
   },
 };
 </script>

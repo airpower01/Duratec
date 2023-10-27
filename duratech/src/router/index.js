@@ -1,4 +1,5 @@
 import { createRouter, createWebHistory } from 'vue-router';
+import { getAuth, onAuthStateChanged } from 'firebase/auth';
 import HomeView from '../views/HomeView.vue';
 import ServicesView from '../views/ServicesView.vue'
 import AboutView from '../views/AboutView.vue'
@@ -8,6 +9,8 @@ import ContactView from '../views/ContactView.vue'
 import NotFound from '../components/NotFound.vue'
 import AdminView from '../views/AdminView.vue'
 import AdminLoginView from '../views/AdminLoginView.vue'
+import AdminRegister from '../views/AdminRegister.vue'
+
 const routes = [
   {
     path: '/',
@@ -40,6 +43,11 @@ const routes = [
     component: ContactView
   },
   {
+    path:'/admin/register',
+    name: 'register',
+    component: AdminRegister
+  },
+  {
     path:'/admin/login',
     name: 'login',
     component: AdminLoginView
@@ -47,7 +55,10 @@ const routes = [
   {
     path: '/blog/admin',
     name: 'admin',
-    component: AdminView
+    component: AdminView,
+    meta: {
+      requiresAuth: true
+    }
   },
   {
     path: '/:pathMatch(.*)*', 
@@ -64,10 +75,27 @@ const router = createRouter({
   routes
 })
 
-router.beforeEach((to, from, next) => {
-  let isAuthenticated = localStorage.getItem('token')
-  if (to.name == 'admin' && !isAuthenticated) next({ name: 'home' })
+const getCurrentUser = () => {
+  return new Promise ((resolve, reject) => {
+    const removeListener = onAuthStateChanged(
+      getAuth(),
+      (user) => {
+        removeListener()  
+        resolve(user)
+      }
+    )
+  })
+}
 
+router.beforeEach(async (to, from, next) => { 
+  if(to.matched.some((record) => record.meta.requiresAuth)) {
+    if(await getCurrentUser()) {
+      next()
+    } else {
+      alert('You dont have access')
+      next('/')
+    }
+  }
   else next()
 })
 
