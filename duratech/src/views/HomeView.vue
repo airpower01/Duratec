@@ -2,6 +2,8 @@
   
   <Carousel></Carousel>
 
+  <CompanyProfile></CompanyProfile>
+
   <Services></Services>
 
   <Projects></Projects>
@@ -32,6 +34,7 @@
   import Testimonial from '@/components/Testimonial.vue';
   import Jumbotron from '@/components/Jumbotron.vue';
   import Blog from '@/components/Blog.vue';
+import CompanyProfile from '@/components/CompanyProfile.vue';
 
   export default {
     name: 'HomeView',
@@ -46,8 +49,9 @@
     Volunteer,
     Testimonial,
     Jumbotron,
-    Blog
-  }
+    Blog,
+    CompanyProfile
+}
   }
   </script>
   

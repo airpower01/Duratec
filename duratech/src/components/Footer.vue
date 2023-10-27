@@ -119,7 +119,7 @@
   </div>
 
   <div class="copyright">
-    <p>&copy; Copyright ©2023 PT Petrotec Air Power</p>
+    <p>&copy; Copyright ©2023 PT Duratec Power Indonesia</p>
   </div>
 </template>
 

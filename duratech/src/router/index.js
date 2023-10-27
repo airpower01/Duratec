@@ -7,7 +7,7 @@ import BlogView from '../views/BlogView.vue'
 import ContactView from '../views/ContactView.vue'
 import NotFound from '../components/NotFound.vue'
 import AdminView from '../views/AdminView.vue'
-
+import AdminLoginView from '../views/AdminLoginView.vue'
 const routes = [
   {
     path: '/',
@@ -38,6 +38,11 @@ const routes = [
     path: '/contact',
     name: 'contact',
     component: ContactView
+  },
+  {
+    path:'/admin/login',
+    name: 'login',
+    component: AdminLoginView
   },
   {
     path: '/blog/admin',

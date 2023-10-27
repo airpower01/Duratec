@@ -1,5 +1,5 @@
 <template>
-      <NavigationPoster route="/blog" page="BLOG" pageTitle="Blog" ></NavigationPoster>
+      <NavigationPoster route="/blog" page="BLOG" pageTitle="Our Blog" ></NavigationPoster>
     <Blog></Blog>
 </template>
 <script>
