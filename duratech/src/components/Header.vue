@@ -1,5 +1,5 @@
 <template>
-  <div class="header" v-if="$route.name !== 'admin'" style="margin-top: 50px;">
+  <div class="header" v-if="$route.name !== 'admin'">
     <div class="container">
       <div class="row align-items-center">
         <div class="col-md-3 col-sm-6 text-center text-md-left">

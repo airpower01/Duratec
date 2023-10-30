@@ -2,7 +2,7 @@
   <div v-if="$route.name !== 'admin'">
     <p
       class="text-center"
-      style="color: #73b925; letter-spacing: 1px; font-weight: bold"
+      style="color: #73b925; margin-top: 50px; letter-spacing: 1px; font-weight: bold"
     >
       Our Blog
     </p>

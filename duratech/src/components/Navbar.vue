@@ -1,12 +1,13 @@
 <template>
   <nav
-    class="navbar navbar-expand-lg navbar-light"
+    class="navbar sticky-top navbar-expand-lg navbar-light"
     style="
       background-color: #7bd22b;
-      position: fixed;
-      top: 0;
+      /* position: sticky; */
+      /* top: 0; */
+      /* left: 0; */
       width: 100%;
-      z-index: 1000;
+      z-index: 10;
       transition: background-color 0.3s;
     "
   >

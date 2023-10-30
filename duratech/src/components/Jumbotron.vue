@@ -13,7 +13,7 @@
         <p style="font-weight: bold;margin-top: 10px; font-size: 40px">
           Do You Care Our Mother Earth Like We Do?
         </p>
-        <p style="opacity: 0.5; font-weight: bold; font-size: 16px; letter-spacing: 1px;">
+        <p style="opacity: 0.5; margin-top: 24px; font-weight: bold; font-size: 16px; letter-spacing: 1px;">
           Far far away, behind the word mountains, far from the countries
           Vokalia and Consonantia, there live the blind texts. Separated they
           live in Bookmarksgrove right at the coast of the Semantics, a large

@@ -1,7 +1,7 @@
 <template>
 <div v-if="$route.name === 'admin'">
     <p class="text-center" style="font-weight: bold; font-size: 40px">
-      Admin side
+      Administrator Page
     </p>
   </div>
   <table class="table">
