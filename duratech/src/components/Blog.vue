@@ -19,7 +19,7 @@
 
   <div class="container">
     <div class="row">
-      <div class="col-md-4" v-for="(blog, i) in blogs" :key="i">
+      <div class="col-md-4" v-for="(blog, i) in state.blogs" :key="i">
         <div class="blog-card" style="height: 500px">
           <div class="card-body">
             <p style="font-weight: bold; font-size: 20px" class="blog-name">
@@ -40,48 +40,19 @@
 <script>
 import { mapActions, mapState } from 'pinia';
 import { useDuratecStore } from '@/store/index.js'
+import { onMounted } from 'vue';
 export default {
-  name: "Blog",
-  computed: {
-    ...mapState(useDuratecStore, ['blogs'])
+  setup() {
+    const { state, fetchBlog } = useDuratecStore(); 
+
+    onMounted(() => {
+      fetchBlog();
+    });
+
+    return {
+      state,
+    };
   },
-  methods: {
-    ...mapActions(useDuratecStore, ['fetchBlog'])
-  },
-  created() {
-    this.fetchBlog();
-  }
-  // data() {
-  //   return {
-  //     isAuthenticated: localStorage.token,
-  //     cards: [
-  //       {
-  //         id: 1,
-  //         title: "Deforestation is the Threat to Our Ecological System",
-  //         description: "A small river named Duden flows by their place.A small river named Duden flows by their place.A small river named Duden flows by their place.A small river named Duden flows by their place.A small river named Duden flows by their place.A small river named Duden flows by their place.",
-  //         img: "https://i5.walmartimages.com/asr/881a58f3-88f0-4594-843e-38a6a7eb25e0_2.d3ffabf1d58e50baf8b06b75494e8f18.jpeg",
-  //       },
-  //       {
-  //         id: 2,
-  //         title: "Deforestation is the Threat to Our Ecological System",
-  //         description: "A small river named Duden flows by their place.A small river named Duden flows by their place.A small river named Duden flows by their place.A small river named Duden flows by their place.A small river named Duden flows by their place.A small river named Duden flows by their place.",
-  //         img: "https://i5.walmartimages.com/asr/881a58f3-88f0-4594-843e-38a6a7eb25e0_2.d3ffabf1d58e50baf8b06b75494e8f18.jpeg",
-  //       },
-  //       {
-  //         id: 3,
-  //         title: "Deforestation is the Threat to Our Ecological System",
-  //         description: "A small river named Duden flows by their place.A small river named Duden flows by their place.A small river named Duden flows by their place.A small river named Duden flows by their place.A small river named Duden flows by their place.A small river named Duden flows by their place.",
-  //         img: "https://i5.walmartimages.com/asr/881a58f3-88f0-4594-843e-38a6a7eb25e0_2.d3ffabf1d58e50baf8b06b75494e8f18.jpeg",
-  //       },
-  //       {
-  //         id: 4,
-  //         title: "Deforestation is the Threat to Our Ecological System",
-  //         description: "A small river named Duden flows by their place.A small river named Duden flows by their place.A small river named Duden flows by their place.A small river named Duden flows by their place.A small river named Duden flows by their place.A small river named Duden flows by their place.",
-  //         img: "https://i5.walmartimages.com/asr/881a58f3-88f0-4594-843e-38a6a7eb25e0_2.d3ffabf1d58e50baf8b06b75494e8f18.jpeg",
-  //       },
-  //     ],
-  //   };
-  // },
 };
 </script>
 

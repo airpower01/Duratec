@@ -13,8 +13,6 @@ import Footer from "./components/Footer.vue";
 import Header from "./components/Header.vue";
 import Navbar from "./components/Navbar.vue";
 
-import { onMounted } from "vue";
-
 export default {
   name: "app",
   components: { Header, Navbar, Footer },
