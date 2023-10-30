@@ -7,13 +7,13 @@
   </div>
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src="https://lh5.ggpht.com/-m1TZK75KaKI/USS5dXr9OWI/AAAAAAAAARs/X3_x3kZ8KvY/s1600/Beautiful-Nature-Wallpapers-for-Background-HD-Wallpaper.jpg" height="400" class="d-block w-100" alt="">
+      <img src="../assets/test_image.png" height="400" class="d-block w-100" alt="">
     </div>
     <div class="carousel-item">
-      <img src="https://lh5.ggpht.com/-m1TZK75KaKI/USS5dXr9OWI/AAAAAAAAARs/X3_x3kZ8KvY/s1600/Beautiful-Nature-Wallpapers-for-Background-HD-Wallpaper.jpg" height="400" class="d-block w-100" alt="">
+      <img src="../assets/test_image.png" height="400" class="d-block w-100" alt="">
     </div>
     <div class="carousel-item">
-      <img src="https://lh5.ggpht.com/-m1TZK75KaKI/USS5dXr9OWI/AAAAAAAAARs/X3_x3kZ8KvY/s1600/Beautiful-Nature-Wallpapers-for-Background-HD-Wallpaper.jpg" height="400" class="d-block w-100" alt="">
+      <img src="../assets/test_image.png" height="400" class="d-block w-100" alt="">
     </div>
   </div>
   <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
