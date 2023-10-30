@@ -19,7 +19,7 @@
 
   <div class="container">
     <div class="row">
-      <div class="col-md-4" v-for="(blog, i) in state.blogs" :key="i">
+      <div class="col-md-4" v-for="(blog, i) in blogs" :key="i">
         <div class="blog-card" style="height: 500px">
           <div class="card-body">
             <p style="font-weight: bold; font-size: 20px" class="blog-name">
@@ -38,20 +38,17 @@
 </template>
 
 <script>
-import { mapActions, mapState } from 'pinia';
 import { useDuratecStore } from '@/store/index.js'
 import { onMounted } from 'vue';
 export default {
   setup() {
-    const { state, fetchBlog } = useDuratecStore(); 
-
+    const { blogs, fetchBlog } = useDuratecStore(); 
     onMounted(() => {
       fetchBlog();
     });
-
     return {
-      state,
-    };
+      blogs
+    }
   },
 };
 </script>

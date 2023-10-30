@@ -2,7 +2,7 @@
  <div class="container-fluid p-0  mb-5">
         <section class="jumbotron text-center" style="background-image: url('https://cdn.discordapp.com/attachments/1020018520836284586/1164412214216773692/pexels-liis-saar-832521_3.jpg?ex=65431e61&is=6530a961&hm=e3e665d60c6521631552458612798ad7b6cff3873275738974ce23582df611ec&');">
             <div class="container">
-                <p class="review-title">GREAT REVIEWS FOR OUR SERVICES</p>
+                <p class="review-title p-3">GREAT REVIEWS FOR OUR SERVICES</p>
                 <p class="statistics text-white mb-5">Technical Statistics</p>
                 <div class="row">
                     <div class="col-md-3">

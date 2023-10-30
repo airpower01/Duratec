@@ -10,7 +10,7 @@
         />
       </div>
       <div class="col-md-6">
-        <p style="font-weight: bold; font-size: 40px">
+        <p style="font-weight: bold;margin-top: 10px; font-size: 40px">
           Do You Care Our Mother Earth Like We Do?
         </p>
         <p style="opacity: 0.5; font-weight: bold; font-size: 16px; letter-spacing: 1px;">

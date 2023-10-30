@@ -1,8 +1,8 @@
 <template>
-      <NavigationPoster route="/projects" page="PROJECTS" pageTitle="Our Projects" ></NavigationPoster>
+      <NavigationPoster route="/products" page="PRODUCTS" pageTitle="Our Products" />
 
-    <Jumbotron></Jumbotron>
-    <Projects></Projects>
+    <Jumbotron/>
+    <Projects/>
 
 </template>
 <script>

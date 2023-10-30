@@ -1,10 +1,10 @@
 <template>
        
-    <NavigationPoster route="/about" page="ABOUT" pageTitle="About Us"></NavigationPoster>
-    <Jumbotron></Jumbotron>
-    <Review></Review>
-    <Volunteer></Volunteer>
-    <Testimonial></Testimonial>
+    <NavigationPoster route="/about" page="ABOUT" pageTitle="About Us"/>
+    <Jumbotron/>
+    <Review/>
+    <Volunteer/>
+    <Testimonial/>
 
 </template>
 

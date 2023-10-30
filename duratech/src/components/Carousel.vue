@@ -1,5 +1,5 @@
 <template>
-<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" style="height: 300px;">
+<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" style="height: 400px;">
   <div class="carousel-indicators">
     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -7,13 +7,13 @@
   </div>
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src="https://lh5.ggpht.com/-m1TZK75KaKI/USS5dXr9OWI/AAAAAAAAARs/X3_x3kZ8KvY/s1600/Beautiful-Nature-Wallpapers-for-Background-HD-Wallpaper.jpg" height="300" class="d-block w-100" alt="">
+      <img src="https://lh5.ggpht.com/-m1TZK75KaKI/USS5dXr9OWI/AAAAAAAAARs/X3_x3kZ8KvY/s1600/Beautiful-Nature-Wallpapers-for-Background-HD-Wallpaper.jpg" height="400" class="d-block w-100" alt="">
     </div>
     <div class="carousel-item">
-      <img src="https://lh5.ggpht.com/-m1TZK75KaKI/USS5dXr9OWI/AAAAAAAAARs/X3_x3kZ8KvY/s1600/Beautiful-Nature-Wallpapers-for-Background-HD-Wallpaper.jpg" height="300" class="d-block w-100" alt="">
+      <img src="https://lh5.ggpht.com/-m1TZK75KaKI/USS5dXr9OWI/AAAAAAAAARs/X3_x3kZ8KvY/s1600/Beautiful-Nature-Wallpapers-for-Background-HD-Wallpaper.jpg" height="400" class="d-block w-100" alt="">
     </div>
     <div class="carousel-item">
-      <img src="https://lh5.ggpht.com/-m1TZK75KaKI/USS5dXr9OWI/AAAAAAAAARs/X3_x3kZ8KvY/s1600/Beautiful-Nature-Wallpapers-for-Background-HD-Wallpaper.jpg" height="300" class="d-block w-100" alt="">
+      <img src="https://lh5.ggpht.com/-m1TZK75KaKI/USS5dXr9OWI/AAAAAAAAARs/X3_x3kZ8KvY/s1600/Beautiful-Nature-Wallpapers-for-Background-HD-Wallpaper.jpg" height="400" class="d-block w-100" alt="">
     </div>
   </div>
   <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">

@@ -1,5 +1,5 @@
 <template>
-  <section style="background-color: #f9f9f9">
+  <section style="background-color: #F7F5F5">
     <div class="volunteer">
       <p class="first-text text-center">MEET OUR VOLUNTEER</p>
       <p class="second-text text-center">Our Volunteer</p>

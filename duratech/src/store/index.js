@@ -1,35 +1,20 @@
-import { ref, reactive, onMounted } from "vue";
+import { defineStore } from "pinia";
 
-const baseUrl = "https://api.dpoweri.co.id";
+
+let baseUrl = 'https://api.dpoweri.co.id'
 const headers = {
-  "API-Key": "Hjkhf637284khfjk",
-};
-
-export function useDuratecStore() {
-  const state = reactive({
-    blogs: [],
-  });
-
-  const fetchBlog = async () => {
-    try {
-      const response = await fetch(`${baseUrl}/blog`, { headers });
-      if (response.ok) {
-        const data = await response.json();
-        state.blogs = data;
-      } else {
-        console.error("Failed to fetch blogs");
-      }
-    } catch (error) {
-      console.error("Error fetching blogs:", error);
-    }
-  };
-
-  onMounted(() => {
-    fetchBlog();
-  });
-
-  return {
-    state,
-    fetchBlog,
-  };
+    "API-Key": "Hjkhf637284khfjk"
 }
+export const useDuratecStore = defineStore("duratec", {
+    state: () => ({
+        blogs: []
+    }),
+    actions: {
+       fetchBlog() {
+        fetch(baseUrl+"/blog", {headers})
+        .then(response => response.json())
+        .then(data => (this.blogs = data));   
+        }
+    }
+
+})

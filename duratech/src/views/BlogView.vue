@@ -1,6 +1,6 @@
 <template>
-      <NavigationPoster route="/blog" page="BLOG" pageTitle="Our Blog" ></NavigationPoster>
-    <Blog></Blog>
+      <NavigationPoster route="/blog" page="BLOG" pageTitle="Our Blog"/>
+    <Blog/>
 </template>
 <script>
 import Blog from '@/components/Blog.vue';

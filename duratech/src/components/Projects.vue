@@ -4,7 +4,7 @@
 
 <div class="container">
     <div class="row">
-        <div class="col-md-3">
+        <div class="col-md-3 col-sm-6">
             <div class="projects-card">
                 <div class="card-body"  style="width: 280px; margin-left: 5px;">
                     <p class="card-title" style="color: #73b925;">ECOLOGY</p>
@@ -24,14 +24,14 @@
                 </div>
             </div>
         </div>
-        <div class="col-md-3">
+        <div class="col-md-3 col-sm-6">
             <div class="projects-card">
                 <div class="card-body"  style="width: 280px; margin-left: 5px;">
                     <img src="../assets/img/hanbell_air_end.png" width="280" height="260" alt="">
                 </div>
             </div>
         </div>
-        <div class="col-md-3">
+        <div class="col-md-3 col-sm-6">
             <div class="projects-card">
                 <div class="card-body" style="width: 280px; margin-left: 5px;">
                     <p class="card-title" style="color: #73b925;">WATER</p>
@@ -51,7 +51,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-md-3">
+        <div class="col-md-3 col-sm-6">
             <div class="projects-card">
                 <div class="card-body">
                     <img src="../assets/img/hanbell_air_end.png" width="280" height="260" style="margin-left: 10px;" alt="">
@@ -60,14 +60,14 @@
         </div>
     </div>
     <div class="row">
-        <div class="col-md-3">
+        <div class="col-md-3 col-sm-6">
             <div class="projects-card">
                 <div class="card-body">
                     <img src="../assets/img/hanbell_air_end.png" width="280" height="260" alt="">
                 </div>
             </div>
         </div>
-        <div class="col-md-3">
+        <div class="col-md-3 col-sm-6">
             <div class="projects-card">
                 <div class="card-body"  style="width: 280px; margin-left: 5px;">
                     <p class="card-title" style="color: #73b925;">ECOLOGY</p>
@@ -87,14 +87,14 @@
                 </div>
             </div>
         </div>
-        <div class="col-md-3">
+        <div class="col-md-3 col-sm-6">
             <div class="projects-card">
                 <div class="card-body">
                     <img src="../assets/img/hanbell_air_end.png" width="280" height="260" style="margin-left: 10px;" alt="">
                 </div>
             </div>
         </div>
-        <div class="col-md-3">
+        <div class="col-md-3 col-sm-6">
             <div class="projects-card">
                 <div class="card-body"  style="width: 280px; margin-left: 5px;">
                     <p class="card-title" style="color: #73b925;">PLANTING</p>

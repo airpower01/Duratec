@@ -1,28 +1,27 @@
 <template>
   
-  <Carousel></Carousel>
+  <Carousel />
 
-  <CompanyProfile></CompanyProfile>
+  <CompanyProfile />
 
-  <Services></Services>
+  <Services />
 
-  <Projects></Projects>
+  <Projects />
 
-  <Review></Review>
+  <Review />
 
-  <Volunteer></Volunteer>
+  <Volunteer />
 
-  <Testimonial></Testimonial>
+  <Testimonial />
 
-  <Jumbotron></Jumbotron>
+  <Jumbotron />
 
-  <Blog></Blog>
-
+  <Blog />
 
   </template>
   
   <script>
-  // @ is an alias to /src
+
   import Navbar from '@/components/Navbar.vue';
   import Header from '@/components/Header.vue';
   import Footer from '@/components/Footer.vue';

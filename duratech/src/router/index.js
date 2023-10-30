@@ -28,8 +28,8 @@ const routes = [
     component: AboutView
   },
   {
-    path: '/projects',
-    name: 'projects',
+    path: '/products',
+    name: 'products',
     component: ProjectsView
   },
   {

@@ -13,6 +13,7 @@
               <p
                 style="
                   font-weight: bold;
+                  margin-top: 20px;
                   font-size: 12px;
                   letter-spacing: 1px;
                   color: white;
@@ -26,7 +27,7 @@
             </div>
           </div>
           <div class="col-md-3 text-right">
-            <button class="subscribe-button">
+            <button class="subscribe-button" style="margin-top: 40px;">
               <p class="subscribe-text">SUBSCRIBE NOW!</p>
             </button>
           </div>

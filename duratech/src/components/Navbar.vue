@@ -1,33 +1,63 @@
 <template>
-  <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #7bd22b;">
+  <nav
+    class="navbar navbar-expand-lg navbar-light"
+    style="
+      background-color: #7bd22b;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 1000;
+      transition: background-color 0.3s;
+    "
+  >
     <div class="container-fluid">
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarTogglerDemo02"
+        aria-controls="navbarTogglerDemo02"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <RouterLink class="nav-link" :to="{ name: 'home' }">Home</RouterLink>
+            <RouterLink class="nav-link" :to="{ name: 'home' }"
+              >Home</RouterLink
+            >
           </li>
           <li class="nav-item">
-            <RouterLink class="nav-link" :to="{ name: 'about' }">About</RouterLink>
+            <RouterLink class="nav-link" :to="{ name: 'about' }"
+              >About</RouterLink
+            >
           </li>
           <li class="nav-item">
-            <RouterLink class="nav-link" :to="{ name: 'services' }">Services</RouterLink>
+            <RouterLink class="nav-link" :to="{ name: 'services' }"
+              >Services</RouterLink
+            >
           </li>
           <li class="nav-item">
-            <RouterLink class="nav-link" :to="{ name: 'projects' }">Projects</RouterLink>
+            <RouterLink class="nav-link" :to="{ name: 'products' }"
+              >Products</RouterLink
+            >
           </li>
           <li class="nav-item">
-            <RouterLink class="nav-link" :to="{ name: 'blog' }">Blog</RouterLink>
+            <RouterLink class="nav-link" :to="{ name: 'blog' }"
+              >Blog</RouterLink
+            >
           </li>
           <li class="nav-item">
-            <RouterLink class="nav-link" :to="{ name: 'contact' }">Contact</RouterLink>
+            <RouterLink class="nav-link" :to="{ name: 'contact' }"
+              >Contact</RouterLink
+            >
           </li>
         </ul>
         <ul class="navbar-nav" v-if="$route.name === 'admin'">
           <li class="nav-item">
-            <button class="nav-link" >Sign out  </button>
+            <button class="nav-link">Sign out</button>
           </li>
         </ul>
       </div>
@@ -35,24 +65,21 @@
   </nav>
 </template>
 
-
-
 <script>
-
 export default {
   name: "Navbar",
   data() {
     return {
-      isLoggedIn: false
-    }
+      isLoggedIn: false,
+    };
   },
   methods: {
     handleSignOut() {
       signOut(auth).then(() => {
-        this.$router.push('/')
-      })
-    }
-  }
+        this.$router.push("/");
+      });
+    },
+  },
 };
 </script>
 
@@ -88,9 +115,5 @@ export default {
   color: white;
   margin-bottom: 4px;
   font-size: 27px;
-}
-
-.all-show {
-  z-index: 10;
 }
 </style>
