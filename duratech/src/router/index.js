@@ -9,7 +9,7 @@ import ContactView from '../views/ContactView.vue'
 import NotFound from '../components/NotFound.vue'
 import AdminView from '../views/AdminView.vue'
 import AdminLoginView from '../views/AdminLoginView.vue'
-import AdminRegister from '../views/AdminRegister.vue'
+import NewBlogForm from '../components/admin/NewBlogForm.vue'
 
 const routes = [
   {
@@ -43,11 +43,6 @@ const routes = [
     component: ContactView
   },
   {
-    path:'/admin/register',
-    name: 'register',
-    component: AdminRegister
-  },
-  {
     path:'/admin/login',
     name: 'login',
     component: AdminLoginView
@@ -59,6 +54,11 @@ const routes = [
     meta: {
       requiresAuth: true
     }
+  },
+  {
+    path: '/blog/admin/create',
+    name: 'NewBlog',
+    component: NewBlogForm,
   },
   {
     path: '/:pathMatch(.*)*', 

@@ -5,9 +5,6 @@ import { createPinia } from "pinia";
 import App from "./App.vue";
 import router from "./router";
 
-// pindah ke folder helper
-
-
 
 const app = createApp(App);
 const pinia = createPinia();

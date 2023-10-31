@@ -4,16 +4,16 @@
       <div class="row">
         <div class="col-sm-7 mx-auto">
           <div class="shadow-lg">
-            <div class="d-flex align-items-center">
-              <div class="d-none d-md-block d-lg-block">
+            <div class="d-flex align-items-center justify-content-center">
+              <div class="d-none d-md-block d-lg-block p-5">
                 <img
                   src="../../assets/logo_potrait.png"
-                  class="objectFit"
-                  width="10"
+                  class="img-fluid"
+                  style="max-width: 100%;"
                 />
               </div>
-              <div class="p-4" id="formPanel">
-                <div class="text-center mb-5">
+              <div  id="formPanel">
+                <div class="text-center mb-4 p-2">
                   <h1 class="customHeading h3 text-uppercase">Login</h1>
                 </div>
                 <form  @submit.prevent="login">
@@ -40,7 +40,7 @@
                     ></span>
                   </div>
                   <p class="text-center" style="color: red;"  v-if="errMsg">{{ errMsg }}</p>
-                  <div class="mt-5">
+                  <div class="mt-5 mb-3">
                     <button class="w-100 p-2 d-block custom-btn">Login</button>
                   </div>
                 </form>
@@ -147,14 +147,6 @@ export default {
   min-width: 280px;
   max-width: 320px;
   width: 100%;
-  margin: 0 auto;
-}
-.objectFit {
-  width: 100%;
-  max-width: 100%;
-  height: auto;
-  object-fit: cover;
-  display: block;
   margin: 0 auto;
 }
 #showCursor {

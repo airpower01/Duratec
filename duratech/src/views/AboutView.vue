@@ -1,6 +1,7 @@
 <template>
        
     <NavigationPoster route="/about" page="ABOUT" pageTitle="About Us"/>
+    <CompanyProfile></CompanyProfile>
     <Jumbotron/>
     <Review/>
     <Volunteer/>
@@ -9,6 +10,7 @@
 </template>
 
 <script>
+import CompanyProfile from '@/components/CompanyProfile.vue';
 import Footer from '@/components/Footer.vue';
 import Header from '@/components/Header.vue';
 import Jumbotron from '@/components/Jumbotron.vue';
@@ -27,7 +29,8 @@ export default {
     Volunteer,
     Testimonial,
     Footer,
-    NavigationPoster
+    NavigationPoster,
+    CompanyProfile
 }
 }
 </script>

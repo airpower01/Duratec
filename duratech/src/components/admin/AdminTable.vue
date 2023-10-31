@@ -1,7 +1,10 @@
 <template>
-<div v-if="$route.name === 'admin'">
+<div v-if="$route.name === 'admin'" class="d-flex justify-content-between mb-3 mt-3 p-5">
     <p class="text-center" style="font-weight: bold; font-size: 40px">
       Administrator Page
+    </p>
+    <p>
+        <RouterLink :to="{name: 'NewBlog'}">  <button type="button" class="btn btn-success btn-rounded" data-mdb-ripple-color="dark">Add New Blog</button> </RouterLink>
     </p>
   </div>
   <table class="table">
@@ -22,7 +25,7 @@
         <td><RouterLink :to="blog._link">{{ blog.title }}</RouterLink></td>
         <td>
           <button class="btn fw-bold btn-outline-primary">Update</button>
-          <button class="btn fw-bold btn-outline-danger">Delete</button>
+          <button class="btn fw-bold btn-outline-danger" @click.prevent="deleteBlog(blog.id)">Delete</button>
         </td>
       </tr>
     </tbody>
@@ -38,7 +41,7 @@ export default {
     ...mapState(useDuratecStore, ["blogs"]),
   },
   methods: {
-    ...mapActions(useDuratecStore, ["fetchBlog"]),
+    ...mapActions(useDuratecStore, ["fetchBlog", "deleteBlog", "addBlog"]),
   },
   created() {
     this.fetchBlog();

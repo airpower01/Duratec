@@ -4,7 +4,7 @@
     <Navbar></Navbar>
   </div>
   <RouterView />
-  <div v-if="$route.name !== 'login' && $route.name !== 'admin' && $route.name !== 'register'">
+  <div v-if="$route.name !== 'login' && $route.name !== 'admin' && $route.name !== 'register' && $route.name !== 'NewBlog'">
     <Footer></Footer>
   </div>
 </template>

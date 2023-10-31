@@ -42,7 +42,7 @@ import { useDuratecStore } from '@/store/index.js'
 import { onMounted } from 'vue';
 export default {
   setup() {
-    const { blogs, fetchBlog } = useDuratecStore(); 
+    const { blogs, fetchBlog} = useDuratecStore(); 
     onMounted(() => {
       fetchBlog();
     });

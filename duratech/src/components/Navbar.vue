@@ -2,10 +2,10 @@
   <nav
     class="navbar sticky-top navbar-expand-lg navbar-light"
     style="
-      background-color: #7bd22b;
-      /* position: sticky; */
-      /* top: 0; */
-      /* left: 0; */
+      background-color: black;
+      position: sticky;
+      top: 0;
+      left: 0;
       width: 100%;
       z-index: 10;
       transition: background-color 0.3s;
@@ -25,32 +25,33 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
+          <li class="nav-item" :class="{ 'active-link': $route.name === 'home' }">
             <RouterLink class="nav-link" :to="{ name: 'home' }"
               >Home</RouterLink
             >
+            <div ></div>
           </li>
-          <li class="nav-item">
+          <li class="nav-item" :class="{ 'active-link': $route.name === 'about' }">
             <RouterLink class="nav-link" :to="{ name: 'about' }"
               >About</RouterLink
             >
           </li>
-          <li class="nav-item">
+          <li class="nav-item" :class="{ 'active-link': $route.name === 'services' }">
             <RouterLink class="nav-link" :to="{ name: 'services' }"
               >Services</RouterLink
             >
           </li>
-          <li class="nav-item">
+          <li class="nav-item" :class="{ 'active-link': $route.name === 'products' }">
             <RouterLink class="nav-link" :to="{ name: 'products' }"
               >Products</RouterLink
             >
           </li>
-          <li class="nav-item">
+          <li class="nav-item" :class="{ 'active-link': $route.name === 'blog' }">
             <RouterLink class="nav-link" :to="{ name: 'blog' }"
               >Blog</RouterLink
             >
           </li>
-          <li class="nav-item">
+          <li class="nav-item" :class="{ 'active-link': $route.name === 'contact' }">
             <RouterLink class="nav-link" :to="{ name: 'contact' }"
               >Contact</RouterLink
             >
@@ -58,7 +59,7 @@
         </ul>
         <ul class="navbar-nav" v-if="$route.name === 'admin'">
           <li class="nav-item">
-            <button class="nav-link">Sign out</button>
+            <button class="nav-link" @click.prevent="handleSignOut">Sign out</button>
           </li>
         </ul>
       </div>
@@ -67,6 +68,10 @@
 </template>
 
 <script>
+
+import { signOut, getAuth } from 'firebase/auth';
+// const auth = getAuth()
+
 export default {
   name: "Navbar",
   data() {
@@ -76,7 +81,8 @@ export default {
   },
   methods: {
     handleSignOut() {
-      signOut(auth).then(() => {
+      getAuth().signOut().then(() => {
+        console.log('user signed out');
         this.$router.push("/");
       });
     },
@@ -88,12 +94,34 @@ export default {
 @import url("https://fonts.googleapis.com/css2?family=Allerta+Stencil&display=swap");
 
 .navbar-nav > li > a {
-  font-weight: bold;
+ 
   padding-top: 10px;
   padding-bottom: 10px;
   font-size: 15px;
   margin-right: 20px;
-  color: white;
+  color: #9D9D9D;
+}
+.active-link {
+  position: relative;
+  font-weight: bold; 
+}
+
+.active-link::before {
+  content: ''; 
+  position: absolute;
+  bottom: 0;
+  width: 80%; 
+  height: 3px; 
+  background-color: white; 
+  animation: underlineAnimation 0.5s ease backwards; 
+}
+@keyframes underlineAnimation {
+  from {
+    width: 0;
+  }
+  to {
+    width: 80%;
+  }
 }
 
 .navbar-toggler {
