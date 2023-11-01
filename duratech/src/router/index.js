@@ -10,6 +10,8 @@ import NotFound from '../components/NotFound.vue'
 import AdminView from '../views/AdminView.vue'
 import AdminLoginView from '../views/AdminLoginView.vue'
 import NewBlogForm from '../components/admin/NewBlogForm.vue'
+import UpdateBlogForm from '../components/admin/UpdateBlogForm.vue'
+import BlogDetail from '../components/admin/BlogDetail.vue'
 
 const routes = [
   {
@@ -56,9 +58,28 @@ const routes = [
     }
   },
   {
+    path: '/blog/:id',
+    name: 'BlogDetail',
+    component: BlogDetail,
+    meta: {
+      requiresAuth: true
+    }
+  },
+  {
     path: '/blog/admin/create',
     name: 'NewBlog',
     component: NewBlogForm,
+    meta: {
+      requiresAuth: true
+    }
+  },
+  {
+    path: '/blog/admin/update/:id',
+    name: 'UpdateBlog',
+    component: UpdateBlogForm,
+    meta: {
+      requiresAuth: true
+    }
   },
   {
     path: '/:pathMatch(.*)*', 

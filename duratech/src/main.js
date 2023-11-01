@@ -14,7 +14,7 @@ pinia.use(({ store }) => {
 app.use(router);
 app.use(pinia);
 
-import './helper/FirebaseAuth'
+import './helper/Firebase.js'
 import './assets/css/index.css'
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap/dist/js/bootstrap.bundle.js'

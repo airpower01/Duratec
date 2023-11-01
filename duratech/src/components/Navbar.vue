@@ -25,7 +25,7 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item" :class="{ 'active-link': $route.name === 'home' }">
+          <li class="nav-item" :class="{ 'active-link': $route.name === 'home'}">
             <RouterLink class="nav-link" :to="{ name: 'home' }"
               >Home</RouterLink
             >
@@ -46,7 +46,7 @@
               >Products</RouterLink
             >
           </li>
-          <li class="nav-item" :class="{ 'active-link': $route.name === 'blog' }">
+          <li class="nav-item" :class="{ 'active-link': $route.name === 'blog'  || $route.name === 'BlogDetail'}">
             <RouterLink class="nav-link" :to="{ name: 'blog' }"
               >Blog</RouterLink
             >

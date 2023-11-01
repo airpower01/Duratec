@@ -22,9 +22,10 @@
         <th scope="row">{{ i + 1 }}.</th>
         <td>{{ blog.create_date }}</td>
         <td>{{ blog.update_date }}</td>
-        <td><RouterLink :to="blog._link">{{ blog.title }}</RouterLink></td>
+        <td><RouterLink :to="'/blog/' + blog.id">{{ blog.title }}</RouterLink></td>
         <td>
-          <button class="btn fw-bold btn-outline-primary">Update</button>
+          <RouterLink :to="'/blog/admin/update/' + blog.id" tes="bener"><button class="btn fw-bold btn-outline-primary">Update</button></RouterLink>
+          
           <button class="btn fw-bold btn-outline-danger" @click.prevent="deleteBlog(blog.id)">Delete</button>
         </td>
       </tr>
