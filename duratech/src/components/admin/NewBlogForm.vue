@@ -1,5 +1,5 @@
 <template>
-  <p class="fw-bold text-center mt-3" style="font-size: 30px;">New Blog Form</p>
+  <p class="fw-bold text-center mt-3" style="font-size: 30px">New Blog Form</p>
   <div class="container">
     <form @submit.prevent="handleSubmit">
       <div class="form-outline mb-4">
@@ -38,7 +38,6 @@
           <button type="submit" class="btn btn-danger btn-block">Back</button>
         </RouterLink>
       </div>
-
     </form>
   </div>
 </template>
@@ -63,7 +62,7 @@ export default {
     ...mapActions(useDuratecStore, ["addBlog"]),
     handleSubmit() {
       this.addBlog(this.input);
-      this.$router.push('/blog/admin')
+      this.$router.push("/blog/admin");
     },
   },
 };

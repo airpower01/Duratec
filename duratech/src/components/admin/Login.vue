@@ -1,5 +1,5 @@
 <template>
-<div class="min-vh-100 d-flex align-items-center">
+  <div class="min-vh-100 d-flex align-items-center">
     <div class="container">
       <div class="row">
         <div class="col-sm-7 mx-auto">
@@ -9,14 +9,14 @@
                 <img
                   src="../../assets/logo_potrait.png"
                   class="img-fluid"
-                  style="max-width: 100%;"
+                  style="max-width: 100%"
                 />
               </div>
-              <div  id="formPanel">
+              <div id="formPanel">
                 <div class="text-center mb-4 p-2">
                   <h1 class="customHeading h3 text-uppercase">Login</h1>
                 </div>
-                <form  @submit.prevent="login">
+                <form @submit.prevent="login">
                   <div class="custom-form-group">
                     <label class="text-uppercase" for="username"
                       >Username</label
@@ -30,8 +30,12 @@
                     <label class="text-uppercase" for="password"
                       >Password</label
                     >
-                    <input type="password" id="password" v-model="password" class="pb-1" /><span
+                    <input
+                      type="password"
+                      id="password"
+                      v-model="password"
                       class="pb-1"
+                    /><span class="pb-1"
                       ><i
                         id="showCursor"
                         class="fa fa-eye-slash"
@@ -39,7 +43,9 @@
                       ></i
                     ></span>
                   </div>
-                  <p class="text-center" style="color: red;"  v-if="errMsg">{{ errMsg }}</p>
+                  <p class="text-center" style="color: red" v-if="errMsg">
+                    {{ errMsg }}
+                  </p>
                   <div class="mt-5 mb-3">
                     <button class="w-100 p-2 d-block custom-btn">Login</button>
                   </div>
@@ -47,25 +53,24 @@
               </div>
             </div>
           </div>
-        </div>    
+        </div>
       </div>
     </div>
   </div>
-
 </template>
 
 <script>
 import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
 
 export default {
-    name: 'Login',
-    data() {
+  name: "Login",
+  data() {
     return {
-        email: "",
-        password: "",
-        errMsg: ""
-    }
-  }, 
+      email: "",
+      password: "",
+      errMsg: "",
+    };
+  },
   methods: {
     showPassword(event) {
       this.showPasswordEnabled = !this.showPasswordEnabled;
@@ -76,34 +81,30 @@ export default {
         : "fa fa-eye-slash";
     },
     login() {
-      signInWithEmailAndPassword(
-        getAuth(),
-        this.email.trim(),
-        this.password
-      )
-      .then((data) => {
-        this.$router.push('/blog/admin')
-          console.log('success')
+      signInWithEmailAndPassword(getAuth(), this.email.trim(), this.password)
+        .then((data) => {
+          this.$router.push("/blog/admin");
+          console.log("success");
         })
         .catch((error) => {
           switch (error.code) {
             case "auth/invalid-email":
-              this.errMsg = "invalid email"
+              this.errMsg = "invalid email";
               break;
             case "auth/user-not-found":
-            this.errMsg = "no account with that email was found"
-            break;
+              this.errMsg = "no account with that email was found";
+              break;
             case "auth/wrong-password":
-              this.errMsg = "incorrect password"
+              this.errMsg = "incorrect password";
               break;
             default:
-              this.errMsg = "Email or password incorrect"
+              this.errMsg = "Email or password incorrect";
               break;
           }
         });
-    }
+    },
   },
-}
+};
 </script>
 
 <style>

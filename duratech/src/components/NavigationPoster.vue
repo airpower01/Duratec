@@ -2,7 +2,8 @@
   <section
     class="hero-wrap hero-wrap-2"
     style="
-      background-image: url('https://i.pinimg.com/originals/55/ce/2e/55ce2e686978a0cc84a8ca2d36e3b85e.jpg'); height: 400px;
+      background-image: url('https://i.pinimg.com/originals/55/ce/2e/55ce2e686978a0cc84a8ca2d36e3b85e.jpg');
+      height: 400px;
     "
   >
     <div class="overlay"></div>
@@ -10,14 +11,29 @@
       <div
         class="row no-gutters slider-text align-items-center justify-content-center"
       >
-      <p class="breadcrumbs mt-5">
-        <span class="me-2"
-          ><a  style="color: #F5F2F2; font-weight: bold; text-decoration: none; " href="/">HOME <i class="fa fa-chevron-right"></i></a
-        ></span >
-        <span  style="color: #F5F2F2; font-weight: bold; ">{{page}} <i class="fa fa-chevron-right"></i></span>
-      </p>
+        <p class="breadcrumbs mt-5">
+          <span class="me-2"
+            ><a
+              style="color: #f5f2f2; font-weight: bold; text-decoration: none"
+              href="/"
+              >HOME <i class="fa fa-chevron-right"></i></a
+          ></span>
+          <span style="color: #f5f2f2; font-weight: bold"
+            >{{ page }} <i class="fa fa-chevron-right"></i
+          ></span>
+        </p>
         <div class="col text-center">
-          <h1 class="mb-0  fw-bold" style="color: #F5F2F2; font-size: 60px; letter-spacing: 3px; margin-top: 200px;">{{ pageTitle }}</h1>
+          <h1
+            class="mb-0 fw-bold"
+            style="
+              color: #f5f2f2;
+              font-size: 60px;
+              letter-spacing: 3px;
+              margin-top: 200px;
+            "
+          >
+            {{ pageTitle }}
+          </h1>
         </div>
       </div>
     </div>
@@ -49,8 +65,7 @@ export default {
   z-index: 0;
 }
 .breadcrumbs {
-    font-size: 17px;
-    letter-spacing: 2px;
+  font-size: 17px;
+  letter-spacing: 2px;
 }
-
 </style>

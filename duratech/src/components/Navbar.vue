@@ -3,9 +3,7 @@
     class="navbar sticky-top navbar-expand-lg navbar-light"
     style="
       background-color: black;
-      position: sticky;
-      top: 0;
-      left: 0;
+      position: sticky !important;
       width: 100%;
       z-index: 10;
       transition: background-color 0.3s;
@@ -25,33 +23,54 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item" :class="{ 'active-link': $route.name === 'home'}">
+          <li
+            class="nav-item"
+            :class="{ 'active-link': $route.name === 'home' }"
+          >
             <RouterLink class="nav-link" :to="{ name: 'home' }"
               >Home</RouterLink
             >
-            <div ></div>
+            <div></div>
           </li>
-          <li class="nav-item" :class="{ 'active-link': $route.name === 'about' }">
+          <li
+            class="nav-item"
+            :class="{ 'active-link': $route.name === 'about' }"
+          >
             <RouterLink class="nav-link" :to="{ name: 'about' }"
               >About</RouterLink
             >
           </li>
-          <li class="nav-item" :class="{ 'active-link': $route.name === 'services' }">
+          <li
+            class="nav-item"
+            :class="{ 'active-link': $route.name === 'services' }"
+          >
             <RouterLink class="nav-link" :to="{ name: 'services' }"
               >Services</RouterLink
             >
           </li>
-          <li class="nav-item" :class="{ 'active-link': $route.name === 'products' }">
+          <li
+            class="nav-item"
+            :class="{ 'active-link': $route.name === 'products' }"
+          >
             <RouterLink class="nav-link" :to="{ name: 'products' }"
               >Products</RouterLink
             >
           </li>
-          <li class="nav-item" :class="{ 'active-link': $route.name === 'blog'  || $route.name === 'BlogDetail'}">
+          <li
+            class="nav-item"
+            :class="{
+              'active-link':
+                $route.name === 'blog' || $route.name === 'BlogDetail',
+            }"
+          >
             <RouterLink class="nav-link" :to="{ name: 'blog' }"
               >Blog</RouterLink
             >
           </li>
-          <li class="nav-item" :class="{ 'active-link': $route.name === 'contact' }">
+          <li
+            class="nav-item"
+            :class="{ 'active-link': $route.name === 'contact' }"
+          >
             <RouterLink class="nav-link" :to="{ name: 'contact' }"
               >Contact</RouterLink
             >
@@ -59,7 +78,9 @@
         </ul>
         <ul class="navbar-nav" v-if="$route.name === 'admin'">
           <li class="nav-item">
-            <button class="nav-link" @click.prevent="handleSignOut">Sign out</button>
+            <button class="nav-link" @click.prevent="handleSignOut">
+              Sign out
+            </button>
           </li>
         </ul>
       </div>
@@ -68,8 +89,7 @@
 </template>
 
 <script>
-
-import { signOut, getAuth } from 'firebase/auth';
+import { signOut, getAuth } from "firebase/auth";
 // const auth = getAuth()
 
 export default {
@@ -81,10 +101,12 @@ export default {
   },
   methods: {
     handleSignOut() {
-      getAuth().signOut().then(() => {
-        console.log('user signed out');
-        this.$router.push("/");
-      });
+      getAuth()
+        .signOut()
+        .then(() => {
+          console.log("user signed out");
+          this.$router.push("/");
+        });
     },
   },
 };
@@ -94,26 +116,25 @@ export default {
 @import url("https://fonts.googleapis.com/css2?family=Allerta+Stencil&display=swap");
 
 .navbar-nav > li > a {
- 
   padding-top: 10px;
   padding-bottom: 10px;
   font-size: 15px;
   margin-right: 20px;
-  color: #9D9D9D;
+  color: #9d9d9d;
 }
 .active-link {
   position: relative;
-  font-weight: bold; 
+  font-weight: bold;
 }
 
 .active-link::before {
-  content: ''; 
+  content: "";
   position: absolute;
   bottom: 0;
-  width: 80%; 
-  height: 3px; 
-  background-color: white; 
-  animation: underlineAnimation 0.5s ease backwards; 
+  width: 80%;
+  height: 3px;
+  background-color: white;
+  animation: underlineAnimation 0.5s ease backwards;
 }
 @keyframes underlineAnimation {
   from {
@@ -128,7 +149,7 @@ export default {
   padding: 0.2rem 0.5rem;
   font-size: 1.25rem;
   line-height: 1;
-  background-color: transparent;
+  background-color: white !important;
   color: white;
 }
 

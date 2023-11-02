@@ -79,7 +79,6 @@ export const useDuratecStore = defineStore("duratec", {
                 });
 
                 if (response.ok) {
-                    console.log(data, '<<<<<<<<<data');
                     return await response.json();
                 } else {
                     throw new Error('Failed to post data');
@@ -97,7 +96,7 @@ export const useDuratecStore = defineStore("duratec", {
                         body: JSON.stringify(data)
                     })
                 if (response.ok) {
-                    this.fetchBlog()
+                    await this.fetchBlogDetail()
                     return await response.json();
                 } else {
                     throw new Error('Failed to post data' + response.status);

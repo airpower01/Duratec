@@ -24,10 +24,18 @@
 
   <div class="container">
     <div class="row">
-      <div class="col-md-4" v-for="(blog, i) in blogs" :key="i">
+      <div
+        class="d-flex justify-content-center col-md-4"
+        v-for="(blog, i) in blogs"
+        :key="i"
+      >
         <div class="blog-card" style="height: 500px">
           <div class="card-body">
-            <RouterLink :to="'blog/' + blog.id" style="text-decoration: none;" class="title-link">
+            <RouterLink
+              :to="'blog/' + blog.id"
+              style="text-decoration: none"
+              class="title-link"
+            >
               <p style="font-weight: bold; font-size: 20px" class="blog-name">
                 {{ blog.title }}
               </p>
@@ -59,7 +67,7 @@ export default {
   },
 };
 </script>
- 
+
 <style>
 .title-link:hover {
   cursor: pointer;

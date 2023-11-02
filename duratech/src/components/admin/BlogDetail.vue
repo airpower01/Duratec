@@ -2,7 +2,12 @@
   <div class="jumbotron container mt-5 p-5">
     <div class="row">
       <div class="col-md-6">
-        <img :src="blog.img" style="height: 300px; width: 600px;" alt="#" class="img-fluid" />
+        <img
+          :src="blog.img"
+          style="height: 300px; width: 600px"
+          alt="image"
+          class="img-fluid"
+        />
       </div>
       <div class="col-md-6">
         <p style="font-weight: bold; margin-top: 10px; font-size: 40px">
@@ -19,7 +24,6 @@
         >
           {{ blog.body }}
         </p>
-
       </div>
     </div>
   </div>

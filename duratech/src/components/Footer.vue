@@ -27,7 +27,7 @@
             </div>
           </div>
           <div class="col-md-3 text-right">
-            <button class="subscribe-button" style="margin-top: 40px;">
+            <button class="subscribe-button" style="margin-top: 35px">
               <p class="subscribe-text">SUBSCRIBE NOW!</p>
             </button>
           </div>
@@ -91,7 +91,7 @@
         </div>
         <div class="col-md-2">
           <div class="footer-col">
-            <div style="margin-top: 35px;">
+            <div style="margin-top: 35px">
               <p>Save Animals</p>
             </div>
             <div>

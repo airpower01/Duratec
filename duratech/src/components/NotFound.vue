@@ -1,15 +1,11 @@
 <template>
-    <p class="text-center fw-bold">
-        404 NOT FOUND
-    </p>
+  <p class="text-center fw-bold">404 NOT FOUND</p>
 </template>
 
 <script>
 export default {
-    name:'NotFound'
-}
+  name: "NotFound",
+};
 </script>
 
-<style>
-
-</style>
+<style></style>

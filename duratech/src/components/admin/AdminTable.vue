@@ -1,13 +1,24 @@
 <template>
-<div v-if="$route.name === 'admin'" class="d-flex justify-content-between mb-3 mt-3 p-5">
+  <div
+    v-if="$route.name === 'admin'"
+    class="d-flex justify-content-between mb-3 mt-3 p-5"
+  >
     <p class="text-center" style="font-weight: bold; font-size: 40px">
       Administrator Page
     </p>
     <p>
-        <RouterLink :to="{name: 'NewBlog'}">  <button type="button" class="btn btn-success btn-rounded" data-mdb-ripple-color="dark">Add New Blog</button> </RouterLink>
+      <RouterLink :to="{ name: 'NewBlog' }">
+        <button
+          type="button"
+          class="btn btn-success btn-rounded"
+          data-mdb-ripple-color="dark"
+        >
+          Add New Blog
+        </button>
+      </RouterLink>
     </p>
   </div>
-  <table class="table">
+  <table class="table container">
     <thead>
       <tr>
         <th scope="col">No.</th>
@@ -22,22 +33,35 @@
         <th scope="row">{{ i + 1 }}.</th>
         <td>{{ blog.create_date }}</td>
         <td>{{ blog.update_date }}</td>
-        <td><RouterLink :to="'/blog/' + blog.id">{{ blog.title }}</RouterLink></td>
         <td>
-          <RouterLink :to="'/blog/admin/update/' + blog.id" tes="bener"><button class="btn fw-bold btn-outline-primary">Update</button></RouterLink>
-          
-          <button class="btn fw-bold btn-outline-danger" @click.prevent="deleteBlog(blog.id)">Delete</button>
+          <RouterLink :to="'/blog/' + blog.id">{{ blog.title }}</RouterLink>
+        </td>
+        <td>
+          <RouterLink :to="'/blog/admin/update/' + blog.id" tes="bener"
+            ><button class="btn fw-bold btn-outline-primary">
+              Update
+            </button></RouterLink
+          >
+
+          <button
+            class="btn fw-bold btn-outline-danger"
+            @click.prevent="deleteBlog(blog.id)"
+          >
+            Delete
+          </button>
         </td>
       </tr>
     </tbody>
   </table>
+  <!-- <ImageUploader></ImageUploader> -->
 </template>
 
 <script>
 import { mapActions, mapState } from "pinia";
-import {useDuratecStore} from '../../store/index.js'
+import { useDuratecStore } from "../../store/index.js";
+import ImageUploader from "./ImageUploader.vue";
 export default {
-  name: 'AdminTable',
+  name: "AdminTable",
   computed: {
     ...mapState(useDuratecStore, ["blogs"]),
   },
@@ -47,5 +71,6 @@ export default {
   created() {
     this.fetchBlog();
   },
-}
+  components: { ImageUploader },
+};
 </script>

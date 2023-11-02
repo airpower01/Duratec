@@ -64,7 +64,7 @@ export default {
     ...mapActions(useDuratecStore, ["fetchBlogDetail", "updateBlog"]),
     handleSubmit() {
       this.updateBlog(this.$route.params.id, this.input);
-      this.$router.push('/blog/admin')
+      this.$router.push("/blog/admin");
     },
   },
   created() {

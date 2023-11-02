@@ -1,17 +1,31 @@
 <template>
-  <div class="header" v-if="$route.name !== 'admin' && $route.name !== 'NewBlog' && $route.name !== 'UpdateBlog'">
+  <div
+    class="header"
+    v-if="
+      $route.name !== 'admin' &&
+      $route.name !== 'NewBlog' &&
+      $route.name !== 'UpdateBlog'
+    "
+  >
     <div class="container">
       <div class="row align-items-center">
         <div class="col-md-3 col-sm-6 text-center text-md-left">
           <img src="@/assets/logo_landscape.png" width="200" alt="Logo" />
         </div>
 
-        <div class="col-md-3 col-sm-6 mt-2" v-for="(message, i) in messages" :key="i">
+        <div
+          class="col-md-3 col-sm-6 mt-2"
+          v-for="(message, i) in messages"
+          :key="i"
+        >
           <div class="d-flex align-items-center">
             <div class="p-3 text-right">
-              <i :class="message.icon" style="margin-right: 5px; color: #72cd23;"></i>
+              <i
+                :class="message.icon"
+                style="margin-right: 5px; color: #72cd23"
+              ></i>
               <span>{{ message.title }}: </span>
-              <span  class="fw-bold"> {{ message.content }}</span>
+              <span class="fw-bold"> {{ message.content }}</span>
             </div>
           </div>
         </div>

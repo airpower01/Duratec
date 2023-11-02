@@ -1,5 +1,5 @@
 <template>
-  <div class="jumbotron container  mt-5">
+  <div class="jumbotron container mt-5">
     <div class="row">
       <div class="col-md-6">
         <img
@@ -10,10 +10,18 @@
         />
       </div>
       <div class="col-md-6">
-        <p style="font-weight: bold;margin-top: 10px; font-size: 40px">
+        <p style="font-weight: bold; margin-top: 10px; font-size: 40px">
           Do You Care Our Mother Earth Like We Do?
         </p>
-        <p style="opacity: 0.5; margin-top: 24px; font-weight: bold; font-size: 16px; letter-spacing: 1px;">
+        <p
+          style="
+            opacity: 0.5;
+            margin-top: 24px;
+            font-weight: bold;
+            font-size: 16px;
+            letter-spacing: 1px;
+          "
+        >
           Far far away, behind the word mountains, far from the countries
           Vokalia and Consonantia, there live the blind texts. Separated they
           live in Bookmarksgrove right at the coast of the Semantics, a large
@@ -24,12 +32,20 @@
 
         <div class="row">
           <div class="col-md-2">
-            <iconify-icon icon="ph:hand-heart-light" style="color: #7bd22b;" width="80"></iconify-icon>   
+            <iconify-icon
+              icon="ph:hand-heart-light"
+              style="color: #7bd22b"
+              width="80"
+            ></iconify-icon>
           </div>
 
           <div class="col-md-5">
-            <p style="font-weight: bold; font-size: 50px; color: #7bd22b;"> $920,000 </p>
-            <p style="font-weight: bold; opacity: 0.5;">FUNDS RAISED BY 1200 PEOPLE</p>
+            <p style="font-weight: bold; font-size: 50px; color: #7bd22b">
+              $920,000
+            </p>
+            <p style="font-weight: bold; opacity: 0.5">
+              FUNDS RAISED BY 1200 PEOPLE
+            </p>
           </div>
         </div>
       </div>
@@ -45,6 +61,6 @@ export default {
 
 <style>
 .jumbotron {
-    background-color: white;
+  background-color: white;
 }
 </style>

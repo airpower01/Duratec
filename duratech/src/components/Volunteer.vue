@@ -1,5 +1,5 @@
 <template>
-  <section style="background-color: #F7F5F5">
+  <section style="background-color: #f7f5f5">
     <div class="volunteer">
       <p class="first-text text-center">MEET OUR VOLUNTEER</p>
       <p class="second-text text-center">Our Volunteer</p>
@@ -153,7 +153,7 @@
               ></iconify-icon>
             </div>
             <p class="volunteer-desc">
-              I am an ambitious workaholic, but apart from that, pretty simple
+              I am an ambitious workaholic, but apart from that, pretty simple         
               person.
             </p>
           </div>
@@ -199,7 +199,7 @@ export default {
 }
 
 .profile-card:hover .volunteer-title {
-    color: white;
+  color: white;
 }
 
 .profile-photo {
